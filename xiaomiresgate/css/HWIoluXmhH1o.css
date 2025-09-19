@@ -1,0 +1,1134 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}figcaption,figure{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}main{display:block}pre{font-family:monospace,monospace;font-size:1em}a{background-color:rgba(0,0,0,0);-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]:-moz-focus-inner,[type=reset]:-moz-focus-inner,[type=submit]:-moz-focus-inner,button:-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}input{overflow:visible}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]:-webkit-inner-spin-button,[type=number]:-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]:-webkit-search-cancel-button,[type=search]:-webkit-search-decoration{-webkit-appearance:none}:-webkit-file-upload-button{-webkit-appearance:button;font:inherit}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;display:table;max-width:100%;padding:0;color:inherit;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}details{display:block}summary{display:list-item}menu{display:block}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+html{max-width:100vw;overflow-x:hidden;scroll-behavior:smooth;-webkit-backface-visibility:hidden}
+body{height:auto;width:100%;max-width:100vw;overflow-x:hidden}
+#main{background:#fff}
+#main *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.text-align-center{text-align:center}
+.img-max-width{max-width:100%;height:auto}
+.radius-border{border-radius:24px}
+.link-preto{color:#000;text-decoration:underline!important}
+.link-branco{color:#fff;text-decoration:underline!important}
+
+/*Header*/
+#site-header{background-color:#000;position:relative;z-index:999}
+#site-header.sticky{position:fixed;top:0;width:100%}
+.fs-section{width:100%;margin:0 auto;justify-content:center;display:flex;position:relative}
+.fs-container{width:100%;flex-flow:row wrap;justify-content:center;display:flex}
+.fs-section-menu{top:0;left:0;box-sizing:border-box;position:sticky;z-index:990}
+.fs-container-menu{align-items:center;flex-direction:row;justify-content:center;display:flex;width:100%;margin:0 auto;padding:0 24px}
+.fs-container-menu.right{justify-content:flex-end}
+.fs-microsite-menu{height:60px;display:flex;justify-content:center;z-index:900}
+.fs-microsite-menu .fs-menu-item{align-content:center;align-items:center;flex-direction:column;justify-content:center;display:flex;width:auto;margin:0}
+.fs-microsite-menu .fs-menu-item.separator{color:#fff;padding:21px 12px;font-size:14px}
+.fs-microsite-menu .fs-menu-item a{display:inline-flex;color:#fff;width:auto;padding:21px 12px;font-size:14px;font-weight:700;text-align:center;text-transform:uppercase;justify-content:center;white-space:nowrap;position:relative}
+.fs-microsite-menu .fs-menu-item a.active:after{content:'';display:block;position:absolute;left:0;width:100%;bottom:0;height:4px;background-color:#fff}
+.fs-menu-button-container{height:100%;cursor:pointer;align-items:center;flex-direction:column;justify-content:center;display:none}
+.fs-menu-button{position:relative;width:1rem;height:1rem;background-color:#fff;border-radius:.1rem;transition:transform .4s cubic-bezier(.23,1,.32,1);position:absolute;right:1rem;display:block}
+.fs-menu-button:after,.fs-menu-button:before{width:14px;height:3px;background-color:#fff;border-radius:2px;transition:transform .4s cubic-bezier(.23,1,.32,1);position:absolute;display:block}
+.fs-menu-button{background-color:rgba(0,0,0,0)}
+.fs-menu-button:before{content:"";transform:rotateZ(35deg);top:3px;right:0}
+.fs-menu-button:after{content:"";transform:rotateZ(-35deg);bottom:3px;right:0}
+.fs-menu-title{margin-right:24px;font-size:1rem;font-weight:700;color:#fff}
+#fs-menu-toggle{display:none}
+#fs-menu-toggle:checked+.fs-menu-button-container .fs-menu-button{background:rgba(255,255,255,0)}
+#fs-menu-toggle:checked+.fs-menu-button-container .fs-menu-button:before{transform:rotate(405deg);top:6px;width:18px}
+#fs-menu-toggle:checked+.fs-menu-button-container .fs-menu-button:after{transform:rotate(-405deg);bottom:7px;width:18px}
+.fs-menu-logo-rewards{position:absolute;left:24px;width:223px;height:auto}
+.fs-menu-logo-careplus{position:absolute;left:24px;width:187px;height:auto}
+.fs-menu-logo-wallet{position:absolute;left:24px;width:191px;height:auto}
+.fs-menu-logo-semprenovo{position:absolute;left:24px;width:277px;max-width:62vw;height:auto}
+.fs-menu-logo-pay{position:absolute;left:24px;width:163px;height:auto}
+.fs-menu-logo-cartao{position:absolute;left:24px;width:252px;max-width:62vw;height:auto}
+.fs-menu-logo-para-voce{position:absolute;left:24px;width:223px;max-width:62vw;height:auto}
+.fs-menu-item.button-right a{background-color:#0077C8}
+
+.breadcrumb{width:100%;margin:0 auto;max-width:1440px;position:absolute;top:12px;left:0px;right:0;padding:0 24px;z-index:2!important;display:flex;flex-direction:row}
+.breadcrumb a{font-family:"web-SamsungOneLatinCondesed";color:#000;font-size:13px;font-weight:400;text-transform:uppercase}
+.breadcrumb a strong{font-weight:800}
+.breadcrumb.color-white a{color:#fff}
+
+@media (min-width:769px){
+.fs-container-menu{max-width:1440px;position:relative}
+.fs-menu-item.button-right{position:absolute;right:24px}
+.fs-menu-item.button-right a{padding-left:30px;padding-right:30px}
+}
+
+@media (max-width:768px){
+.fs-microsite-menu .fs-menu-item{width:100%}
+}
+
+
+/*Footer*/
+@media (min-width:769px) and (max-width:1440px){.footer .footer-column__item--flex .footer-category__list{height:auto!important}}
+
+/*Content*/
+#site-content{width:100%;margin:0 auto;margin-bottom:auto;box-sizing:border-box}
+#site-content.sticky{padding-top:60px}
+#site-content section[class*=__section]{width:100%;margin:0 auto;padding:0 7vw;justify-content:center;align-items:center;display:flex;position:relative;height:calc(100vh - 60px);background-size:cover;background-repeat:no-repeat}
+#site-content section[class*=__section].auto-height{height:auto!important}
+#site-content section[class*=__section].min-auto-height{min-height:calc(100vh - 60px);height:auto!important}
+#site-content section[class*=__section].auto-width{padding:0}
+#site-content section[class*=__section] *{z-index:1}
+#site-content div[class*=__wrapper]{width:100%;margin:0 auto;max-width:1440px;padding:0 24px}
+#site-content div[class*=__wrapper].padding-top-bottom{padding-top:90px;padding-bottom:90px}
+#site-content div[class*=__wrapper].padding-top{padding-top:90px}
+#site-content div[class*=__wrapper].full-width{max-width:initial;padding:0}
+#site-content div[class*=__content]{position:relative;z-index:2}
+#site-content h2[class*=__title]{font-family:"web-Samsung Sharp Sans";font-weight:700}
+#site-content h2[class*=__title].normal-weight{font-weight:400}
+#site-content h2[class*=__title].padding-bottom{padding-bottom:3rem}
+#site-content h3[class*=__text]{font-family:"web-SamsungOneLatinCondesed";font-weight:800;padding:1rem 0 0 0}
+#site-content p[class*=__text]{font-family:"web-SamsungOneLatinCondesed";font-weight:500;padding:0.5rem 0 2.5rem 0}
+#site-content p[class*=__text].small-text{font-size:clamp(16px,0.85vw,1.8vh)}
+#site-content li[class*=__text]{font-family:"web-SamsungOneLatinCondesed";font-weight:500}
+#site-content li[class*=__text].small-text{font-size:clamp(16px,0.85vw,1.8vh)}
+#site-content p[class*=__text].minimal-text{font-size:13px;line-height:17px;padding:0 0 6px 0!important}
+#site-content a[class*=__button]{font-family:"web-SamsungOneLatin";font-weight:800;font-size:clamp(21px,1.4vw,2.8vh);text-transform:uppercase;color:#fff;display:inline-block;border-radius:3.5vw;padding:0.5em 2em;transition:.3s;text-align:center}
+#site-content div[class*=__icon]{display:flex;align-items:center;padding-bottom:1rem}
+#site-content div[class*=__icon] img{width:100px;max-width:5.25vw}
+#site-content div[class*=__icon] span{font-family:"web-SamsungOneLatinCondesed";font-weight:600;font-size:clamp(21px,1.55vw,3.15vh);display:inline-flex;padding-left:1rem}
+
+.top-header__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/fundo-header.jpg) center left -5vw}
+.samsung-pay__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/fundo-pay.jpg) center}
+.samsung-rewards__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/fundo-rewards.jpg) center}
+.cartao-samsung-itau__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/fundo-cartao-itau.jpg) center}
+.samsung-care-plus__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/fundo-care-plus.jpg) center}
+.samsung-sempre-novo__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/fundo-sempre-novo.jpg) center}
+.samsung-para-voce__section{background:url(../images/afj5M5wtScqr.jpg) center}
+.samsung-para-voce__section:after{content:"";display:block;position:absolute;top:0;left:13vw;width:35vw;height:100%;background:url(../images/1XMxeEP3lL2M.png) no-repeat center bottom;background-size:100% auto;pointer-events:none}
+section.menu-deactivator{height:calc(100vh - 60px - 80px)!important}
+.rewards-ganhe-pontos__section,
+.sempre-novo-introducao__section,
+.sempre-novo-opcoes__section,
+.sempre-novo-ofertas__section,
+.pay-wallet__section,
+.pay-quem-ja-esta__section,
+.pay-seguranca-colunas__section,
+.pay-transit-funcionamento__section,
+.samsung-wallet__section{background-color:#fff}
+.rewards-como-participar__section,
+.sempre-novo-assinatura__section,
+.sempre-novo-beneficios__section,
+.sempre-novo-funcionamento__section,
+.sempre-novo-planos__section{background-color:#f2f2f2}
+.rewards-beneficios__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/rewards-beneficios-fundo.jpg) center}
+.careplus-disclaimer__section,
+.para-voce-disclaimer__section{background-color:#f4f4f4;padding-top:60px!important;padding-bottom:60px!important}
+.para-voce-disclaimer__section.dark-color{background-color:#eee}
+.para-voce-disclaimer__text a{color:#000!important;text-decoration:underline!important;margin:0 6px!important}
+.para-voce-disclaimer__section{position:relative;z-index:1}
+.sempre-novo-videos__section{background-color:#000}
+.pay-cadastre-cartao__section,
+.pay-seguranca__section,
+.pay-usando-lojas__section,
+.cartao-lojas__section,
+.cartao-pague-aproximacao__section,.wallet-bolso__section{background-color:#f4f4f4}
+.pay-pontos-rewards__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/pay-fundo-pontos-rewards.jpg) center}
+.pay-transit__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/pay-fundo-transit.jpg) center #f9f9f9;background-size:auto 100%!important}
+.cartao-condicoes-exclusivas__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/cartao-condicoes-exclusivas-fundo.jpg) center}
+.cartao-planos__section{background-color:#e6e6e6}
+.wallet-essenciais__section{background-color:#2a57f2}
+
+.top-header__content,
+.samsung-rewards__content,
+.samsung-sempre-novo__content,
+.samsung-para-voce__content{float:right}
+.samsung-sempre-novo__content{padding-right:6vw}
+.samsung-care-plus__content{margin-top:-7vw}
+
+.cartao-samsung-itau__icon span,
+.samsung-care-plus__icon span,
+.samsung-para-voce__icon span{color:#fff}
+
+.top-header__title{font-size:clamp(32px,5vw,9.4vh);color:#000}
+.top-header__text{font-size:clamp(21px,2.1vw,3.8vh);color:#000}
+
+.samsung-pay__title,
+.samsung-rewards__title,
+.cartao-samsung-itau__title,
+.samsung-care-plus__title,
+.samsung-sempre-novo__title,
+.samsung-para-voce__title,
+.rewards-ganhe-pontos__title,
+.rewards-como-participar__title,
+.rewards-beneficios__title,
+.careplus-planos-precos__title,
+.careplus-seguros-coberturas__title,
+.careplus-como-contratar__title,
+.sempre-novo-videos__title,
+.sempre-novo-introducao__title,
+.sempre-novo-opcoes__title,
+.sempre-novo-ofertas__title,
+.sempre-novo-assinatura__title,
+.sempre-novo-beneficios__title,
+.sempre-novo-funcionamento__title,
+.sempre-novo-planos__title,
+.pay-wallet__title,
+.pay-cadastre-cartao__title,
+.pay-quem-ja-esta__title,
+.pay-seguranca__title,
+.pay-seguranca-colunas__title,
+.pay-pontos-rewards__title,
+.pay-transit__title,
+.pay-usando-lojas__title,
+.cartao-condicoes-exclusivas__title,
+.cartao-pague-aproximacao__title,
+.cartao-planos__title,
+.cartao-ofertas__title,
+.cartao-lojas__title,
+.modal-qrcode__title,
+.samsung-wallet__title,
+.wallet-bolso__title,
+.wallet-essenciais__title,
+.para-voce-como-funciona__title{font-size:clamp(28px,3.125vw,6vh);color:#000}
+.cartao-samsung-itau__title,
+.rewards-beneficios__title,
+.sempre-novo-videos__title,
+.sempre-novo-ofertas__title,
+.sempre-novo-planos__title,
+.pay-pontos-rewards__title,
+.cartao-condicoes-exclusivas__title,
+.cartao-ofertas__title,
+.modal-qrcode__title,
+.wallet-essenciais__title{color:#fff}
+.samsung-care-plus__title{color:#f2f2f2}
+
+.samsung-pay__text,
+.samsung-rewards__text,
+.cartao-samsung-itau__text,
+.samsung-care-plus__text,
+.samsung-sempre-novo__text,
+.samsung-para-voce__text,
+.rewards-ganhe-pontos__text,
+.rewards-como-participar__text,
+.rewards-beneficios__text,
+.careplus-planos-precos__text,
+.careplus-seguros-coberturas__text,
+.careplus-como-contratar__text,
+.sempre-novo-videos__text,
+.sempre-novo-introducao__text,
+.sempre-novo-assinatura__text,
+.sempre-novo-beneficios__text,
+.sempre-novo-funcionamento__text,
+.sempre-novo-planos__text,
+.pay-wallet__text,
+.pay-cadastre-cartao__text,
+.pay-quem-ja-esta__text,
+.pay-seguranca__text,
+.pay-pontos-rewards__text,
+.pay-transit__text,
+.pay-usando-lojas__text,
+.cartao-pague-aproximacao__text,
+.cartao-planos__text,
+.cartao-ofertas__text,
+.cartao-lojas__text,
+.modal-qrcode__text,
+.samsung-wallet__text,
+.wallet-bolso__text,
+.wallet-essenciais__text,
+.para-voce-como-funciona__text{font-size:clamp(21px,1.4vw,2.8vh);color:#000}
+.cartao-samsung-itau__text{color:#fefefe}
+.samsung-care-plus__text,
+.rewards-beneficios__text,
+.sempre-novo-videos__text,
+.sempre-novo-planos__text,
+.pay-pontos-rewards__text,
+.modal-qrcode__text,
+.wallet-essenciais__text{color:#fff}
+.rewards-beneficios__text+.rewards-beneficios__text{margin-top:-2.5rem!important}
+
+img.height80px{width:auto;height:80px}
+
+.samsung-pay__button{background-color:#00c9b8}.samsung-pay__button:hover{background-color:#00b5a5}
+.samsung-rewards__button,.rewards-beneficios__button,.pay-pontos-rewards__button{background-color:#a87eff}.samsung-rewards__button:hover,.rewards-beneficios__button:hover,.pay-pontos-rewards__button:hover{background-color:#9771e5}
+.cartao-samsung-itau__button{background-color:#ff4100}.cartao-samsung-itau__button:hover{background-color:#e53a00}
+.samsung-care-plus__button{background-color:#e31889}.samsung-care-plus__button:hover{background-color:#cc167b}
+.samsung-sempre-novo__button{background-color:#ffb546}.samsung-sempre-novo__button:hover{background-color:#e5a33f}
+.samsung-para-voce__button{background-color:#000}.samsung-para-voce__button:hover{background-color:#222}
+.pay-wallet__button,.samsung-wallet__button{background-color:#1D49C2}.pay-wallet__button:hover,.samsung-wallet__button:hover{background-color:#1a42ae}
+.cartao-lojas__button,.sempre-novo-introducao__button{background-color:#0077C8}.cartao-lojas__button:hover,.sempre-novo-introducao__button:hover{background-color:#006bb4}
+.wallet-essenciais__button.color-pay{background-color:#1E4BC6}.wallet-essenciais__button.color-pay:hover{background-color:#1b43b2}
+.wallet-essenciais__button.color-pass{background-color:#1F3396}.wallet-essenciais__button.color-pass:hover{background-color:#1c2e87}
+.wallet-essenciais__button.color-cinema{background-color:#FF7300}.wallet-essenciais__button.color-cinema:hover{background-color:#e56700}
+.wallet-essenciais__button.color-rewards{background-color:#a87eff}.wallet-essenciais__button.color-rewards:hover{background-color:#9771e5}
+
+.top-header__icons{display:flex;flex-direction:row;align-items:flex-start!important}
+.top-header__icon{display:flex;flex-direction:column;padding-right:1.2rem}
+.top-header__icon span{font-size:clamp(16px,1.25vw,2.5vh)!important;padding:0.5rem 0 0 0!important;text-align:center;line-height:1.15}
+
+.rewards-ganhe-pontos__two-columns{display:flex;flex-direction:row}
+.rewards-ganhe-pontos__column{display:flex;flex-direction:column;width:calc(50% - 12px);margin-right:24px;align-items:center}
+.rewards-ganhe-pontos__column:last-child{margin-right:0}
+.rewards-ganhe-pontos__column p{padding-top:18px!important}
+
+.rewards-como-participar__three-cards{display:flex;flex-direction:row}
+.rewards-como-participar__card{display:flex;flex-direction:column;width:calc(50% - 16px);margin-right:24px;background-color:#fff;border-radius:24px;align-items:center;padding:70px 0 70px 0}
+.rewards-como-participar__card:last-child{margin-right:0}
+.rewards-como-participar__card .icon{max-width:108px;height:auto}
+.rewards-como-participar__card .rewards-como-participar__text{padding-bottom:0!important}
+
+.careplus-seguros-coberturas__section:before{content:"";display:block;position:absolute;top:0;left:0;right:calc(50% - 696px);height:100%;background-color:#eee;border-top-right-radius:16px;border-bottom-right-radius:16px;pointer-events:none}
+.careplus-seguros-coberturas__two-columns{display:flex;flex-direction:row}
+.careplus-seguros-coberturas__carousel{width:50%}
+.careplus-seguros-coberturas__carousel .flickity-page-dots{text-align:left;left:30px;width:auto}
+.careplus-seguros-coberturas__carousel .flickity-page-dots .dot{opacity:0.2;background-color:#000!important;width:8px;height:8px}
+.careplus-seguros-coberturas__carousel .flickity-page-dots .dot.is-selected{opacity:1}
+.careplus-seguros-coberturas__carousel .flickity-button{color:#000!important;background-color:transparent!important}
+.careplus-seguros-coberturas__carousel .flickity-prev-next-button{top:auto;transform:none;bottom:-28px;width:25px;height:30px}
+.careplus-seguros-coberturas__carousel .flickity-prev-next-button.previous{left:0}
+.careplus-seguros-coberturas__carousel .flickity-prev-next-button.next{right:auto;left:155px}
+.careplus-seguros-coberturas__carousel .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+.careplus-seguros-coberturas__carousel .flickity-button:focus{box-shadow:none!important}
+.careplus-seguros-coberturas__slide{width:100%}
+.careplus-seguros-coberturas__slide h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important}
+.careplus-seguros-coberturas__slide p{padding:1.2rem 0 1.8rem 0!important}
+.careplus-seguros-coberturas__slide ul{padding-left:clamp(18px,1vw,2.2vh)}
+.careplus-seguros-coberturas__slide ul li{list-style:disc;padding-bottom:6px}
+.careplus-seguros-coberturas__icons{flex-direction:row;flex-wrap:wrap;align-items:flex-start!important}
+.careplus-seguros-coberturas__icon{flex-direction:column;text-align:center;margin:2em 20px 0 0;width:110px}
+.careplus-seguros-coberturas__icon img{width:auto!important;max-width:initial!important;height:auto}
+.careplus-seguros-coberturas__video{width:82%;margin:-7em -50% 0 60px}
+
+.careplus-como-contratar__three-columns{display:flex;flex-direction:row;flex-wrap:wrap;padding:60px 0 80px 0}
+.careplus-como-contratar__column{display:flex;flex-direction:column;width:calc(25% - 18px);margin-right:24px;align-items:center}
+.careplus-como-contratar__column:last-child{margin-right:0}
+.careplus-como-contratar__column img{width:138px;height:auto}
+.careplus-como-contratar__column h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important}
+.careplus-como-contratar__column p{padding:1.2rem 0 1.8rem 0!important}
+.careplus-como-contratar__column a{font-size:clamp(16px,1vw,1.8vh)!important;font-weight:600!important;background-color:#0077C8}
+
+.careplus-banner__section img{max-width:100%;height:auto}
+
+.careplus-planos-precos__content .table-wrapper{display:none}
+.careplus-planos-precos__content .table-wrapper.active{display:initial}
+.careplus-planos-precos__content .careplus-planos-precos__subtitle{font-size:clamp(18px,1vw,2.2vh);padding:2em 0 1em 0}
+.careplus-planos-precos__content .careplus-planos-precos__subtitle.unique{padding-top:0}
+.careplus-planos-precos__content .condicoes{position:relative;z-index:3;font-size:13px;padding-top:48px;text-align:center;font-weight:600}
+
+/* SAMSUNG CARE+ | Abas Desktop/Dropdown Mobile */
+#careplus-planos-precos .tabs-container{position:relative}
+#careplus-planos-precos .tabs-container nav{position:relative;width:100%;margin:0 auto;background:#fff}
+#careplus-planos-precos .tabs-container nav ul{display:flex;flex-direction:column;list-style:none;margin:0;padding:0;border:1px solid #ccc;padding:0 10px}
+#careplus-planos-precos .tabs-container nav ul li{order:1;padding:1rem;cursor:pointer;color:#000;border-top:1px solid #eee;margin-left:-10px;margin-right:-10px;padding-left:25px;font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important}
+#careplus-planos-precos .tabs-container nav ul li.active{order:0;border-top:none}
+#careplus-planos-precos .tabs-container nav ul li:not(.active){position:absolute;top:-999em}
+#careplus-planos-precos .tabs-container nav ul.expanded li.active:after{border-top-color:transparent;border-bottom-color:#555;top:1em}
+#careplus-planos-precos .tabs-container nav ul.expanded li:not(.active){position:relative;top:auto}
+#careplus-planos-precos .tab-content{display:none;padding:48px;background-color:#eee;border-bottom-left-radius:16px;border-bottom-right-radius:16px;overflow:hidden}
+#careplus-planos-precos .tab-content.current{display:inherit}
+/* SAMSUNG CARE+ | Abas Desktop/Dropdown Mobile */
+
+/* SAMSUNG CARE+ | Dropdown Interno (modelos) */
+#careplus-planos-precos .dropdown-container{position:relative;width:100%;z-index:2!important}
+#careplus-planos-precos .dropdown-container .dropdown-toggle{color:#3392D3;background-color:#fff;font-size:18px;padding:9px 18px;box-shadow:0px 0px 4px -2px rgba(0,0,0,0.15);border-radius:8px;font-weight:600;cursor:pointer;position:relative;transition:.3s}
+#careplus-planos-precos .dropdown-container .dropdown-toggle:hover,
+#careplus-planos-precos .dropdown-container .dropdown-toggle:active,
+#careplus-planos-precos .dropdown-container .dropdown-toggle:focus{background-color:#000;color:#fff}
+#careplus-planos-precos .dropdown-container .dropdown-menu{width:100%;border-radius:8px;box-shadow:0px 0px 4px -2px rgba(0,0,0,0.15);margin-top:1px;position:absolute;left:0;top:100%;display:none;background-color:#fff;z-index:10}
+#careplus-planos-precos .dropdown-container .dropdown-menu ul{list-style:none;padding:0;margin:0;overflow:hidden;border-radius:8px;z-index:10}
+#careplus-planos-precos .dropdown-container .dropdown-menu ul li{text-decoration:none;display:block;color:#000;font-size:15px;padding:9px 18px;font-weight:400;box-shadow:0px 0px 4px -2px rgba(0,0,0,0.15);transition:.3s;cursor:pointer}
+#careplus-planos-precos .dropdown-container .dropdown-menu ul li:hover,
+#careplus-planos-precos .dropdown-container .dropdown-menu ul li:active,
+#careplus-planos-precos .dropdown-container .dropdown-menu ul li:focus{background-color:#3392D3;color:#fff}
+#careplus-planos-precos .dropdown-container .dropdown-menu ul li.selected{background-color:#999;color:#000}
+
+#careplus-planos-precos .dropdown-menu,
+#careplus-planos-precos .dropdown-toggle{position:relative}
+#careplus-planos-precos .dropdown-toggle:before{content:"";position:absolute;right:20px;top:50%;transform:translateY(-50%) rotate(45deg);border:5px solid;border-top-color:rgba(0,0,0,0);border-left-color:rgba(0,0,0,0);margin-top:-2.5px;background-color:rgba(0,0,0,0);pointer-events:none}
+#careplus-planos-precos .dropdown-menu{z-index:10;position:relative}
+#careplus-planos-precos .dropdown-menu:before{z-index:-1;transform:rotate(-135deg);top:-4px;border-color:#fff;box-shadow:1px 1px 4px -2px rgba(0,0,0,0.4)}
+
+#careplus-planos-precos .dropdown-container.dropdown-open .dropdown-menu{display:block}
+#careplus-planos-precos .dropdown-container.dropdown-open .dropdown-toggle{background-color:#000;color:#fff}
+#careplus-planos-precos .dropdown-container.dropdown-open .dropdown-toggle:before{transform:rotate(-135deg)}
+/* SAMSUNG CARE+ | Dropdown Interno (modelos) */
+
+/* SAMSUNG CARE+ | Tabelas Responsivas */
+#careplus-planos-precos .table-wrapper{position:relative;overflow:hidden}
+#careplus-planos-precos .table-wrapper .tables-area{position:relative}
+#careplus-planos-precos .table-wrapper .responsive table{position:relative}
+#careplus-planos-precos .table-wrapper .responsive table:before{content:"";display:block;position:absolute;z-index:-1;top:0;bottom:-999px;left:-999px;right:-999px;background-color:#dedede;pointer-events:none}
+#careplus-planos-precos .table-wrapper th,
+#careplus-planos-precos .table-wrapper td{height:56px;border-bottom:1px dotted #666;border-right:1px dotted #666;vertical-align:middle;position:relative;cursor:default}
+#careplus-planos-precos .table-wrapper td:before{content:"";transition:.3s}
+#careplus-planos-precos .table-wrapper th:last-child,
+#careplus-planos-precos .table-wrapper td:last-child{border-right:0}
+#careplus-planos-precos .table-wrapper tr:last-child td{border-bottom:0}
+#careplus-planos-precos .table-wrapper .pinned{display:none}
+#careplus-planos-precos .table-wrapper .scrollable table{width:100%}
+
+#careplus-planos-precos .table-wrapper th:nth-child(1),
+#careplus-planos-precos .table-wrapper td:nth-child(1){width:calc(100% - 180px - 360px - 180px);text-align:left}
+#careplus-planos-precos .table-wrapper th:nth-child(2),
+#careplus-planos-precos .table-wrapper td:nth-child(2){width:180px;text-align:center}
+#careplus-planos-precos .table-wrapper th:nth-child(3),
+#careplus-planos-precos .table-wrapper td:nth-child(3){width:360px;text-align:center}
+#careplus-planos-precos .table-wrapper th:nth-child(4),
+#careplus-planos-precos .table-wrapper td:nth-child(4){width:180px;text-align:center}
+#careplus-planos-precos .table-wrapper td:last-child span{font-size:14px}
+#careplus-planos-precos .table-wrapper td:last-child a{text-transform:uppercase;font-weight:600;color:#000}
+#careplus-planos-precos .table-wrapper tr:hover td:before{content:"";display:block;position:absolute;top:0;bottom:0;left:-18px;right:-18px;background-color:#3392D3;z-index:-1;pointer-events:none}
+#careplus-planos-precos .table-wrapper tr:hover td{color:#fff}
+#careplus-planos-precos .table-wrapper tr:hover td a{color:#3392D3;background-color:#fff;border-radius:1em;padding:6px 12px}
+#careplus-planos-precos .table-wrapper .valor-duplo{display:flex;flex-direction:row;justify-content:space-evenly}
+#careplus-planos-precos .table-wrapper .valor-duplo div{display:flex;flex-direction:column;text-align:center;width:180px}
+#careplus-planos-precos .table-wrapper .valor-duplo div span{font-size:13px}
+/* SAMSUNG CARE+ | Tabelas Responsivas */
+
+.sempre-novo-videos__two-columns{display:flex;flex-direction:row}
+.sempre-novo-videos__column{height:48vw;min-height:720px;width:50%;text-align:center}
+.sempre-novo-videos__column:nth-child(1){background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/semprenovo-video-compre-itau.jpg) no-repeat top center;background-size:cover}
+.sempre-novo-videos__column:nth-child(2){background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/semprenovo-video-assine-porto.jpg) no-repeat top center;background-size:cover}
+.sempre-novo-videos__column img{margin:30px 0}
+.sempre-novo-videos__title{margin-top:60px}
+.sempre-novo-videos__text{font-family:"web-SamsungOneLatin"!important}
+
+.sempre-novo-introducao__two-columns{display:flex;flex-direction:row}
+.sempre-novo-introducao__two-columns img:not(.height80px){max-width:100%;height:auto}
+.sempre-novo-introducao__text-column{width:50%;padding-right:30px}
+.sempre-novo-introducao__text-column p:nth-child(2){padding:2.5rem 0 0.5rem 0!important}
+.sempre-novo-introducao__text-column p:nth-child(4){padding:2.5rem 0 3rem 0!important}
+.sempre-novo-introducao__button{margin-top:2em}
+.sempre-novo-introducao__image-column{width:50%;padding-left:30px}
+
+.sempre-novo-opcoes__wrapper{position:relative}
+.sempre-novo-opcoes__wrapper:before{content:"";display:block;position:absolute;top:0;bottom:0;left:-4vw;right:-4vw;background-color:#f4f4f4;border-radius:24px}
+.sempre-novo-opcoes__title{padding-bottom:48px}
+.sempre-novo-opcoes__three-cards{display:flex;flex-direction:row;padding-bottom:60px}
+.sempre-novo-opcoes__card{display:flex;flex-direction:column;width:calc(50% - 16px);margin-right:24px;background-color:#003399;border-radius:24px;align-items:center;padding:70px 30px}
+.sempre-novo-opcoes__card:last-child{margin-right:0}
+.sempre-novo-opcoes__card .icon{max-width:108px;height:auto}
+.sempre-novo-opcoes__card h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#fff}
+.sempre-novo-opcoes__card p{color:#fff;padding-bottom:0!important}
+
+.sempre-novo-ofertas__wrapper{position:relative;margin-top:60px!important}
+.sempre-novo-ofertas__wrapper:before{content:"";display:block;position:absolute;top:0;bottom:0;left:-4vw;right:-4vw;background-color:#003399;border-radius:24px}
+.sempre-novo-ofertas__title{padding-bottom:48px}
+.sempre-novo-ofertas__two-columns{display:flex;flex-direction:row}
+.sempre-novo-ofertas__video{width:calc(33.333% - 16px);margin-right:24px;background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/semprenovo-ofertas-video.png) no-repeat center;background-size:cover;border-radius:24px}
+.sempre-novo-ofertas__carousel{width:calc(66.666% - 16px)}
+.sempre-novo-ofertas__slide{display:flex;flex-direction:column;width:calc(50% - 16px);margin-right:24px;background-color:#fff;border-radius:24px;align-items:center;padding:60px 30px}
+.sempre-novo-ofertas__slide .sempre-novo-ofertas__imgbox{display:flex;justify-content:center;align-items:center;height:400px}
+.sempre-novo-ofertas__slide img{max-width:100%;height:auto}
+.sempre-novo-ofertas__slide h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important}
+.sempre-novo-ofertas__slide p{padding:0.6rem 0 1.8rem 0!important}
+.sempre-novo-ofertas__slide a{font-size:clamp(16px,1vw,1.8vh)!important;font-weight:600!important;background-color:#0077C8}
+#sempre-novo-ofertas .flickity-page-dots{bottom:-45px}
+#sempre-novo-ofertas .flickity-page-dots .dot{background-color:#fff;opacity:1}
+#sempre-novo-ofertas .flickity-page-dots .dot.is-selected{background-color:#4B9CE9;opacity:1}
+
+#sempre-novo-ofertas .flickity-button{color:#fff!important;background-color:transparent!important}
+#sempre-novo-ofertas .flickity-prev-next-button{top:auto;transform:none;bottom:-49px;width:25px;height:30px;z-index:9!important}
+#sempre-novo-ofertas .flickity-prev-next-button.previous{left:calc(50% - 100px)}
+#sempre-novo-ofertas .flickity-prev-next-button.next{right:calc(50% - 100px)}
+#sempre-novo-ofertas .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+#sempre-novo-ofertas .flickity-button:focus{box-shadow:none!important}
+
+.sempre-novo-ofertas__box-cinza{position:relative;margin-top:60px;z-index:0}
+.sempre-novo-ofertas__box-cinza:before{content:"";display:block;position:absolute;top:-25vw;bottom:0;left:-9999px;right:-9999px;background-color:#404040;z-index:-1}
+.sempre-novo-ofertas__box-cinza h2.sempre-novo-ofertas__title{padding-bottom:60px!important}
+
+.sempre-novo-assinatura__two-columns{display:flex;flex-direction:row}
+.sempre-novo-assinatura__image-column{width:60%;padding-right:60px}
+.sempre-novo-assinatura__image-column img{max-width:100%}
+.sempre-novo-assinatura__text-column{width:40%;padding-top:90px}
+.sempre-novo-assinatura__text-column p{padding:2.5rem 0 0 0!important}
+
+.sempre-novo-beneficios__wrapper{position:relative;margin-top:60px!important}
+.sempre-novo-beneficios__wrapper:before{content:"";display:block;position:absolute;top:0;bottom:0;left:-4vw;right:-4vw;background-color:#fff;border-radius:24px}
+.sempre-novo-beneficios__three-cards{display:flex;flex-direction:row;justify-content:center}
+.sempre-novo-beneficios__card{display:flex;flex-direction:column;width:calc(33.333% - 16px);margin-right:24px;background-color:#f4f4f4;border-radius:24px;align-items:center;padding:70px 30px}
+.sempre-novo-beneficios__card:last-child{margin-right:0}
+.sempre-novo-beneficios__card .icon{max-width:108px;height:auto}
+.sempre-novo-beneficios__three-cards h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important}
+.sempre-novo-beneficios__three-cards p{padding-bottom:0!important}
+
+.sempre-novo-funcionamento__text{padding-bottom:0!important}
+
+.sempre-novo-planos__section{padding-bottom:90px!important}
+.sempre-novo-planos__wrapper{position:relative;margin-top:60px!important}
+.sempre-novo-planos__wrapper:before{content:"";display:block;position:absolute;top:0;bottom:0;left:-4vw;right:-4vw;background-color:#404040;border-radius:24px}
+.sempre-novo-planos__three-cards{display:flex;flex-direction:row;justify-content:center}
+.sempre-novo-planos__card{display:flex;flex-direction:column;width:calc(33.333% - 16px);margin-right:24px;background-color:#f4f4f4;border-radius:24px;align-items:center;padding:70px 30px}
+.sempre-novo-planos__card:last-child{margin-right:0}
+.sempre-novo-planos__card .sempre-novo-planos__imgbox{display:flex;justify-content:center;align-items:center;height:380px}
+.sempre-novo-planos__card img{max-width:100%;height:auto}
+.sempre-novo-planos__card h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#000}
+.sempre-novo-planos__card p{padding:0.6rem 0 1.8rem 0!important;color:#000}
+.sempre-novo-planos__card a{font-size:clamp(16px,1vw,1.8vh)!important;font-weight:600!important;background-color:#0077C8;position:relative}
+.sempre-novo-planos__card a span{padding-right:20px}
+.sempre-novo-planos__card a:after{content:"";display:block;background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/fonts/sempre-novo-icone-botao-setinha.svg) no-repeat center;width:12px;height:12px;position:absolute;top:50%;right:32px;margin-top:-6px}
+
+.pay-wallet__two-columns{display:flex;flex-direction:row}
+.pay-wallet__image-column{width:50%}
+.pay-wallet__image-column img{max-width:100%;height:auto}
+.pay-wallet__text-column{display:flex;flex-direction:column;width:50%;padding-left:24px;justify-content:center}
+.pay-wallet__title{font-weight:400!important}
+.pay-wallet__text{padding-top:1.5rem!important}
+.pay-wallet__button{width:fit-content}
+
+.pay-cadastre-cartao__two-columns{display:flex;flex-direction:row}
+.pay-cadastre-cartao__text-column{display:flex;flex-direction:column;width:40%;padding-right:24px;justify-content:center}
+.pay-cadastre-cartao__title{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important}
+.pay-cadastre-cartao__text{padding-top:1.5rem!important}
+.pay-cadastre-cartao__carousel-column{width:60%}
+.pay-cadastre-cartao__slide{width:100%}
+.pay-cadastre-cartao__image{display:flex;flex-direction:row;align-items:center}
+.pay-cadastre-cartao__image img{position:relative;z-index:2!important}
+.pay-cadastre-cartao__box-image{background-color:#fff;border-radius:24px;display:flex;flex-direction:column;justify-content:center;height:420px;width:100%;padding-left:120px;margin-left:-60px}
+.pay-cadastre-cartao__box-image .pay-cadastre-cartao__number{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;color:#0077C8;font-size:clamp(28px,3.125vw,6vh)}
+.pay-cadastre-cartao__box-image .pay-cadastre-cartao__text{padding:1.5rem 0 0 0!important}
+
+#pay-cadastre-cartao .flickity-page-dots{bottom:-45px}
+#pay-cadastre-cartao .flickity-page-dots .dot{background-color:#c3c3c3;opacity:1}
+#pay-cadastre-cartao .flickity-page-dots .dot.is-selected{background-color:#000;opacity:1}
+
+#pay-cadastre-cartao .flickity-button{color:#000!important;background-color:transparent!important}
+#pay-cadastre-cartao .flickity-prev-next-button{top:auto;transform:none;bottom:-49px;width:25px;height:30px;z-index:9!important}
+#pay-cadastre-cartao .flickity-prev-next-button.previous{left:calc(50% - 100px)}
+#pay-cadastre-cartao .flickity-prev-next-button.next{right:calc(50% - 100px)}
+#pay-cadastre-cartao .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+#pay-cadastre-cartao .flickity-button:focus{box-shadow:none!important}
+
+.pay-quem-ja-esta__text{padding-top:1.5rem!important}
+.pay-quem-ja-esta__grid-logos{display:flex;flex-direction:row;flex-wrap:wrap}
+.pay-quem-ja-esta__grid-logo{width:20%;display:flex;justify-content:center;align-items:center;padding:30px}
+.pay-quem-ja-esta__grid-logo img{max-width:100%;height:auto}
+
+.pay-seguranca__wrapper{padding-top:160px!important;padding-bottom:160px!important}
+.pay-seguranca__title{padding-top:3rem!important}
+.pay-seguranca__text{padding:1.5rem 0 0 0!important}
+.pay-seguranca__imagem-persona{position:absolute;left:50%;bottom:-160px}
+
+.pay-seguranca-colunas__wrapper{padding-top:160px!important;padding-bottom:160px!important}
+.pay-seguranca-colunas__title{padding-bottom:3rem!important}
+.pay-seguranca-colunas__two-cards{display:flex;flex-direction:row}
+.pay-seguranca-colunas__card{display:flex;flex-direction:column;width:calc(50% - 12px);margin-right:24px;background-color:#022CFF;border-radius:24px;align-items:center;padding:70px 0 70px 0}
+.pay-seguranca-colunas__card:last-child{margin-right:0}
+.pay-seguranca-colunas__card .icon{max-width:108px;height:auto}
+.pay-seguranca-colunas__card h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#fff}
+.pay-seguranca-colunas__card p{padding:0.6rem 0 0 0!important;color:#fff}
+
+.pay-pontos-rewards__wrapper{padding-top:150px!important;padding-bottom:250px!important}
+.pay-pontos-rewards__text{padding:1.5rem 0 0 0!important}
+.pay-pontos-rewards__button{margin:3rem 0 0 0!important}
+
+.pay-transit__wrapper{padding-top:160px!important;padding-bottom:160px!important}
+.pay-transit__content{padding-left:65%}
+.pay-transit__text{padding:1.5rem 0 0 0!important}
+
+.pay-transit-funcionamento__wrapper{padding-top:120px!important;padding-bottom:120px!important}
+.pay-transit-funcionamento__slide{width:100%}
+.pay-transit-funcionamento__slide.last{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;height:75%}
+.pay-transit-funcionamento__slide.last h4{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;color:#0077C8}
+
+.pay-transit__two-columns{display:flex;flex-direction:row}
+.pay-transit__text-column{display:flex;flex-direction:column;width:50%;text-align:right;padding-right:45px}
+.pay-transit__text-column h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;padding:2.5rem 0!important}
+.pay-transit__text-column h4{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#0077C8}
+.pay-transit__text-column p{padding:1.5rem 0 0 0!important;font-size:clamp(18px,1.1vw,2.3vh)!important}
+.pay-transit__text-column p strong{font-weight:800!important}
+.pay-transit__text-column p img{height:auto;width:100%;max-width:280px}
+.pay-transit__text-column .pay-transit__icon-help{display:inline-block;background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/pay-transit-icone-interrogacao.png) no-repeat center right;width:30px;height:26px;margin-top:1px}
+.pay-transit__image-column{width:50%;padding-left:30px}
+.pay-transit__image-column img{max-width:100%;height:auto}
+
+#pay-transit-funcionamento .flickity-page-dots{bottom:-45px}
+#pay-transit-funcionamento .flickity-page-dots .dot{background-color:#c3c3c3;opacity:1}
+#pay-transit-funcionamento .flickity-page-dots .dot.is-selected{background-color:#000;opacity:1}
+
+#pay-transit-funcionamento .flickity-button{color:#000!important;background-color:transparent!important}
+#pay-transit-funcionamento .flickity-prev-next-button{top:auto;transform:none;bottom:-49px;width:25px;height:30px;z-index:9!important}
+#pay-transit-funcionamento .flickity-prev-next-button.previous{left:calc(50% - 100px)}
+#pay-transit-funcionamento .flickity-prev-next-button.next{right:calc(50% - 100px)}
+#pay-transit-funcionamento .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+#pay-transit-funcionamento .flickity-button:focus{box-shadow:none!important}
+
+.pay-usando-lojas__slide{width:100%}
+.pay-usando-lojas__columns{display:flex;flex-direction:row;justify-content:center}
+.pay-usando-lojas__column-image{width:23%;padding-right:24px;display:flex;flex-direction:column;justify-content:center;height:419px;align-items:center}
+.pay-usando-lojas__column-image img{max-width:100%;height:auto}
+.pay-usando-lojas__column-texts{width:77%;padding-right:50%;display:flex;flex-direction:column;justify-content:center;height:419px}
+.pay-usando-lojas__column-texts .pay-usando-lojas__subtitle{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#0077C8}
+.pay-usando-lojas__column-texts .pay-usando-lojas__text{padding:1.5rem 0 0 0!important;font-size:clamp(18px,1.1vw,2.3vh)!important}
+
+#pay-usando-lojas .flickity-page-dots{bottom:45px;width:50%}
+#pay-usando-lojas .flickity-page-dots .dot{background-color:#c3c3c3;opacity:1}
+#pay-usando-lojas .flickity-page-dots .dot.is-selected{background-color:#000;opacity:1}
+
+#pay-usando-lojas .flickity-button{color:#000!important;background-color:transparent!important}
+#pay-usando-lojas .flickity-prev-next-button{top:auto;transform:none;bottom:41px;width:25px;height:30px;z-index:9!important}
+#pay-usando-lojas .flickity-prev-next-button.previous{left:calc(25% - 55px)}
+#pay-usando-lojas .flickity-prev-next-button.next{right:calc(75% - 55px)}
+#pay-usando-lojas .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+#pay-usando-lojas .flickity-button:focus{box-shadow:none!important}
+
+/* PAY | Abas Desktop/Dropdown Mobile */
+#pay-usando-lojas .tabs-container{position:relative}
+#pay-usando-lojas .tabs-container nav{position:relative;width:100%;margin:0 auto;background:#fff}
+#pay-usando-lojas .tabs-container nav ul{display:flex;flex-direction:column;list-style:none;margin:0;padding:0;border-right:1px solid #ccc;padding:0 10px}
+#pay-usando-lojas .tabs-container nav ul li{order:1;padding:1rem;cursor:pointer;color:#000;border-top:1px solid #eee;margin-left:-10px;margin-right:-10px;padding-left:25px;font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important}
+#pay-usando-lojas .tabs-container nav ul li.active{order:0;border-top:none}
+#pay-usando-lojas .tabs-container nav ul li:not(.active){position:absolute;top:-999em}
+#pay-usando-lojas .tabs-container nav ul.expanded li.active:after{border-top-color:transparent;border-bottom-color:#555;top:1em}
+#pay-usando-lojas .tabs-container nav ul.expanded li:not(.active){position:relative;top:auto}
+#pay-usando-lojas .tab-content{display:none;padding:0;background-color:#fff;border-radius:30px;border-top-left-radius:0;overflow:hidden;height:419px}
+#pay-usando-lojas .tab-content .pay-usando-lojas__box-image{position:absolute;right:0;top:0}
+#pay-usando-lojas .tab-content .pay-usando-lojas__box-image:after{content:"";display:block;position:absolute;width:24px;height:419px;top:0;left:0;background-color:#f4f4f4}
+#pay-usando-lojas .tab-content.current{display:inherit;position:relative}
+/* PAY | Abas Desktop/Dropdown Mobile */
+
+.cartao-videos__three-columns{display:flex;flex-direction:row}
+.cartao-videos__column{width:calc(33.333% - 16px);margin-right:24px}
+.cartao-videos__column:last-child{margin-right:0}
+.cartao-videos__column img{max-width:100%;height:auto}
+
+.cartao-condicoes-exclusivas__section{padding-bottom:90px!important}
+.cartao-condicoes-exclusivas__card{display:flex;flex-direction:column;width:calc(33.333% - 16px);margin-right:24px;background-color:transparent;border:2px solid #fff;border-radius:24px;align-items:center;padding:70px 30px;height:377px}
+.cartao-condicoes-exclusivas__card img{width:auto;height:64px}
+.cartao-condicoes-exclusivas__card h3{font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#0077C8}
+.cartao-condicoes-exclusivas__card p{padding:0.6rem 0 0 0!important;color:#fff;font-family:"web-SamsungOneLatin"!important;font-weight:400!important}
+.cartao-condicoes-exclusivas__card p strong{font-weight:700!important}
+
+#cartao-condicoes-exclusivas .flickity-page-dots{bottom:-65px}
+#cartao-condicoes-exclusivas .flickity-page-dots .dot{background-color:#fff;opacity:1}
+#cartao-condicoes-exclusivas .flickity-page-dots .dot.is-selected{background-color:#0077C8;opacity:1}
+
+#cartao-condicoes-exclusivas .flickity-button{color:#fff!important;background-color:transparent!important}
+#cartao-condicoes-exclusivas .flickity-prev-next-button{top:auto;transform:none;bottom:-69px;width:25px;height:30px;z-index:9!important}
+#cartao-condicoes-exclusivas .flickity-prev-next-button.previous{left:calc(50% - 118px)}
+#cartao-condicoes-exclusivas .flickity-prev-next-button.next{right:calc(50% - 118px)}
+#cartao-condicoes-exclusivas .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+#cartao-condicoes-exclusivas .flickity-button:focus{box-shadow:none!important}
+
+.cartao-pague-aproximacao__section{padding-bottom:90px!important}
+.cartao-pague-aproximacao__two-columns{display:flex;flex-direction:row}
+.cartao-pague-aproximacao__text-column{display:flex;flex-direction:column;width:40%;padding-right:24px;justify-content:center}
+.cartao-pague-aproximacao__title{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important}
+.cartao-pague-aproximacao__text{padding:1.5rem 0 0 0!important}
+.cartao-pague-aproximacao__carousel-column{width:60%}
+.cartao-pague-aproximacao__slide{width:100%}
+.cartao-pague-aproximacao__slide>img{max-width:100%;height:auto}
+.cartao-pague-aproximacao__slide.first{display:flex;align-items:center;justify-content:center}
+.cartao-pague-aproximacao__image{display:flex;flex-direction:row;align-items:center}
+.cartao-pague-aproximacao__image img{position:relative;z-index:2!important}
+.cartao-pague-aproximacao__box-image{background-color:#fff;border-radius:24px;display:flex;flex-direction:column;justify-content:center;height:420px;width:100%;padding-left:120px;margin-left:-60px}
+.cartao-pague-aproximacao__number{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;color:#0077C8;font-size:clamp(28px,3.125vw,6vh)}
+.cartao-pague-aproximacao__text{padding:1.5rem 0 0 0!important}
+
+#cartao-pague-aproximacao .flickity-page-dots{bottom:-65px}
+#cartao-pague-aproximacao .flickity-page-dots .dot{background-color:#c3c3c3;opacity:1}
+#cartao-pague-aproximacao .flickity-page-dots .dot.is-selected{background-color:#000;opacity:1}
+
+#cartao-pague-aproximacao .flickity-button{color:#000!important;background-color:transparent!important}
+#cartao-pague-aproximacao .flickity-prev-next-button{top:auto;transform:none;bottom:-69px;width:25px;height:30px;z-index:9!important}
+#cartao-pague-aproximacao .flickity-prev-next-button.previous{left:calc(50% - 100px)}
+#cartao-pague-aproximacao .flickity-prev-next-button.next{right:calc(50% - 100px)}
+#cartao-pague-aproximacao .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+#cartao-pague-aproximacao .flickity-button:focus{box-shadow:none!important}
+
+.cartao-planos__section{padding-bottom:90px!important}
+.cartao-planos__three-columns{display:flex;flex-direction:row}
+.cartao-planos__column{display:flex;flex-direction:column;width:calc(100% - 760px)}
+.cartao-planos__column h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#0077C8}
+.cartao-planos__column p{padding:1rem 0 0 0!important;color:#000;font-family:"web-SamsungOneLatinCondesed"!important;font-size:clamp(21px,1.4vw,2.8vh)!important;font-weight:400!important}
+.cartao-planos__column ul{padding-left:1.35em}
+.cartao-planos__column ul li{list-style:disc;padding:1rem 0 0 0!important;color:#000;font-family:"web-SamsungOneLatinCondesed"!important;font-size:clamp(21px,1.4vw,2.8vh)!important;font-weight:400!important}
+.cartao-planos__column img{position:absolute;bottom:-180px;max-width:calc(100% - 640px);height:auto;margin-left:-8%}
+.cartao-planos__column.first,.cartao-planos__column.last{width:380px}
+
+.cartao-ofertas__section{padding-bottom:90px!important}
+.cartao-ofertas__wrapper{position:relative;margin-top:60px!important}
+.cartao-ofertas__wrapper:before{content:"";display:block;position:absolute;top:0;bottom:-30px;left:-4vw;right:-4vw;background-color:#003399;border-radius:24px}
+.cartao-ofertas__slide{display:flex;flex-direction:column;width:calc(33.333% - 16px);margin-right:24px;background-color:#fff;border-radius:24px;align-items:center;padding:60px 30px}
+.cartao-ofertas__slide h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important}
+.cartao-ofertas__slide h3 + p{padding-bottom:0!important}
+.cartao-ofertas__slide p{padding:0.6rem 0 1.8rem 0!important}
+.cartao-ofertas__slide a{font-size:clamp(16px,1vw,1.8vh)!important;font-weight:600!important;background-color:#0077C8}
+.cartao-ofertas__imgbox{display:flex;justify-content:center;align-items:center;height:400px}
+.cartao-ofertas__imgbox img{max-width:100%;height:auto}
+
+#cartao-ofertas .flickity-page-dots{bottom:-65px}
+#cartao-ofertas .flickity-page-dots .dot{background-color:#fff;opacity:1}
+#cartao-ofertas .flickity-page-dots .dot.is-selected{background-color:#4B9CE9;opacity:1}
+
+#cartao-ofertas .flickity-button{color:#fff!important;background-color:transparent!important}
+#cartao-ofertas .flickity-prev-next-button{top:auto;transform:none;bottom:-69px;width:25px;height:30px;z-index:9!important}
+#cartao-ofertas .flickity-prev-next-button.previous{left:calc(50% - 100px)}
+#cartao-ofertas .flickity-prev-next-button.next{right:calc(50% - 100px)}
+#cartao-ofertas .flickity-prev-next-button .flickity-button-icon{width:100%;height:100%;top:0;left:0}
+#cartao-ofertas .flickity-button:focus{box-shadow:none!important}
+
+.cartao-lojas__section{padding-top:120px!important;padding-bottom:180px!important}
+.cartao-lojas__section:before{content:"";display:block;position:absolute;top:0;bottom:0;right:0;left:35vw;background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/cartao-lojas-online-parceiros-fundo.png) no-repeat center left;background-size:cover}
+.cartao-lojas__text{padding-top:1.5rem!important}
+.cartao-lojas__bullets{padding-left:26px;padding-top:5rem;counter-reset:contador;text-align:left!important}
+.cartao-lojas__bullets li:before{counter-increment:contador;content:counters(contador,".");margin:0 5px 0 -26px;font-weight:700;text-align:center;width:21px;height:21px;background-color:#003399;color:#fff;border-radius:100%;display:inline-block}
+.cartao-lojas__bullets li{margin-bottom:7px;background-color:#f4f4f4;border-radius:6px;width:fit-content;padding-right:5px}
+.cartao-lojas__bullets li a{text-decoration:underline!important}
+
+.link-modal{cursor:pointer}
+
+.modal-qrcode{background-color:rgba(0,0,0,.9);display:flex;flex-direction:column;justify-content:center;align-items:center;position:fixed;top:0;bottom:0;right:0;left:0;z-index:999;opacity:0;pointer-events:none;transition:0.3s}
+.modal-qrcode.active{opacity:1;pointer-events:initial}
+.modal-qrcode__text{padding:2rem 0 4rem 0}
+.modal-qrcode__close{display:block;position:absolute;top:170px;right:90px;width:24px;height:24px;background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/cartao-icone-fechar.png) no-repeat center;background-position:100% 100%!important;cursor:pointer}
+
+.samsung-wallet__section{z-index:2}
+.samsung-wallet__section.hub{overflow:hidden}
+.samsung-wallet__two-columns{display:flex;flex-direction:row}
+.samsung-wallet__image-column{width:50%}
+.samsung-wallet__image-column img{max-width:100%;height:auto}
+.samsung-wallet__text-column{display:flex;flex-direction:column;width:50%;padding-right:24px;justify-content:center}
+.samsung-wallet__title{font-weight:400!important}
+.samsung-wallet__text{padding-top:1.5rem!important}
+.samsung-wallet__button{width:fit-content}
+.samsung-wallet__floating-img{position:absolute;bottom:-5vw;right:0;max-width:35vw}
+
+.wallet-bolso__section{z-index:1}
+.wallet-bolso__wrapper{padding-top:12vw!important;padding-bottom:12vw!important}
+.wallet-bolso__content{padding-left:50%}
+.wallet-bolso__content:before{content:"";display:block;position:absolute;top:-9vw;bottom:-9vw;left:0;right:-99999px;background-color:#022CFF;border-radius:16px;z-index:-1}
+h2.wallet-bolso__title{color:#fff!important}
+.wallet-bolso__floating-img{position:absolute;left:0;top:0;bottom:0;margin:auto;max-width:calc(50vw - 60px)}
+.wallet-bolso__text-column{display:flex;flex-direction:column}
+.wallet-bolso__bullet{display:flex;flex-direction:row;padding-top:2vw}
+.wallet-bolso__bullet-image-column{width:119px}
+.wallet-bolso__bullet-text-column{width:calc(100% - 119px)}
+.wallet-bolso__bullet-text-column h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#fff!important}
+.wallet-bolso__bullet-text-column p{padding:0.6rem 0 0 0!important;color:#fff;font-family:"web-SamsungOneLatin"!important;font-weight:400!important;font-size:clamp(16px,0.85vw,1.8vh)}
+
+.wallet-essenciais__section{z-index:2}
+.wallet-essenciais__three-columns{display:flex;flex-direction:row;justify-content:center;padding:60px 0 80px 0}
+.wallet-essenciais__column{display:flex;flex-direction:column;width:calc(33.333% - 16px);margin-right:24px;align-items:center;background-color:#fff;border-radius:24px;padding:50px 24px}
+.wallet-essenciais__column:last-child{margin-right:0}
+.wallet-essenciais__column img{width:90px;height:auto}
+.wallet-essenciais__column h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#000!important}
+.wallet-essenciais__column p{padding:1.2rem 0 1.8rem 0!important;color:#000!important}
+.wallet-essenciais__column a{font-size:clamp(16px,1vw,1.8vh)!important;font-weight:600!important}
+
+.wallet-final-image{width:100%}
+
+.para-voce-como-funciona__two-columns{display:flex;flex-direction:row}
+.para-voce-como-funciona__text-column{display:flex;flex-direction:column;width:50%}
+.para-voce-como-funciona__bullet{display:flex;flex-direction:row;padding-top:5vw}
+.para-voce-como-funciona__bullet-image-column{width:220px}
+.para-voce-como-funciona__bullet-text-column{width:calc(100% - 220px)}
+.para-voce-como-funciona__bullet-text-column h3{font-family:"web-Samsung Sharp Sans"!important;font-weight:700!important;font-size:clamp(21px,1.55vw,3.15vh)!important;color:#000!important;padding-top:3.5rem!important}
+.para-voce-como-funciona__bullet-text-column p{padding:0.6rem 0 0 0!important;color:#000;font-family:"web-SamsungOneLatin"!important;font-weight:400!important;font-size:clamp(16px,0.85vw,1.8vh)}
+.para-voce-como-funciona__bullet-text-column p strong{font-weight:700!important}
+.para-voce-como-funciona__image-column{width:50%;padding-left:24px}
+.para-voce-como-funciona__image-column img{max-width:50vw;height:auto;position:absolute;top:0}
+.para-voce-como-funciona__image-column img.sticky{top:90px;position:fixed}
+
+.para-voce-saiba-mais__section:before{content:"";display:block;position:absolute;top:0;left:-99999px;right:-99999px;bottom:0;background-color:#fff;z-index:1}
+.para-voce-saiba-mais__section,.para-voce-saiba-mais__wrapper{padding:0!important}
+.para-voce-saiba-mais__slide img{max-width:100%}
+.para-voce-como-funciona__mobile{display:none;max-width:500px;width:100%;height:auto;margin:40px auto 0 auto}
+
+div.footer{background-color:#fff;position:relative;z-index:1}
+
+
+
+@media (min-width:1999px) and (orientation:landscape){#site-content div[class*=__wrapper]{max-width:initial}}
+@media (min-width:1024px) and (orientation:landscape){img.only-mobile{display:none}.cartao-pague-aproximacao__slide{height:593px}}
+@media (width:1024px) and (orientation:landscape){.samsung-rewards__text{max-width:270px}}
+@media (min-width:1025px){br.only-medium-mobile{display:none}}
+@media (min-width:768px){br.only-mobile,.img-mobile{display:none}}
+@media (max-width:1280px){br.only-big-desktop{display:none}}
+@media (max-width:1199px){br.only-bigmedium-desktop{display:none}}
+@media (max-width:767px){.only-desktop,.img-desktop{display:none}}
+
+@media (min-width:1921px){
+.pay-transit__section{background-position:left center}
+}
+
+@media (max-width:1456px){
+.careplus-seguros-coberturas__section:before{right:24px}
+}
+
+@media (max-width:1399px){
+.pay-usando-lojas__column-texts{padding-right:56%}
+.pay-seguranca__imagem-persona img{max-width:800px}
+.careplus-como-contratar__three-columns{max-width:800px;margin:auto}
+.careplus-como-contratar__column{width:calc(50% - 12px);margin-bottom:90px}
+.careplus-como-contratar__column:nth-child(2){margin-right:0}
+.careplus-como-contratar__column:nth-child(3),.careplus-como-contratar__column:nth-child(4){margin-bottom:0}
+}
+
+@media (max-width:1299px){
+.rewards-como-participar__card,
+.pay-seguranca-colunas__card{padding:50px 30px}
+.pay-cadastre-cartao__box-image,.cartao-pague-aproximacao__box-image{padding-left:100px}
+.cartao-planos__column{width:calc(100% - 680px)}
+.cartao-planos__column.first,.cartao-planos__column.last{width:340px}
+.cartao-planos__column img{max-width:calc(100% - 500px);margin-left:-14%}
+}
+
+@media (max-width:1279px){
+#site-content div[class*=__wrapper].padding-top-bottom,
+#site-content div[class*=__wrapper].padding-top{padding-top:60px}
+.careplus-seguros-coberturas__two-columns{flex-direction:column}
+.careplus-seguros-coberturas__carousel{width:100%}
+.careplus-seguros-coberturas__carousel .flickity-prev-next-button{bottom:0}
+.careplus-seguros-coberturas__carousel .flickity-page-dots{bottom:3px}
+.careplus-seguros-coberturas__video{width:100%;margin:60px 0 0 0}
+#careplus-planos-precos .tab-content{padding:24px}
+#careplus-planos-precos .table-wrapper table th,#careplus-planos-precos .table-wrapper table td{font-size:14px}
+#careplus-planos-precos .table-wrapper .scrollable{overflow:scroll;overflow-y:hidden}
+#careplus-planos-precos .table-wrapper .scrollable table{margin-left:180px;width:calc(100% - 180px)}
+#careplus-planos-precos .table-wrapper .scrollable table .hide-mobile{display:none}
+#careplus-planos-precos .table-wrapper .pinned{display:block;position:absolute;left:0;top:0;background:#eee;width:180px;overflow:hidden;overflow-x:scroll}
+#careplus-planos-precos .table-wrapper .pinned table th,#careplus-planos-precos .table-wrapper .pinned table td{text-align:left;border-right:1px dotted #666}
+#careplus-planos-precos .table-wrapper th:nth-child(2),#careplus-planos-precos .table-wrapper td:nth-child(2){width:110px;text-align:center}
+#careplus-planos-precos .table-wrapper th:nth-child(3),#careplus-planos-precos .table-wrapper td:nth-child(3){width:190px;text-align:center}
+#careplus-planos-precos .table-wrapper th:nth-child(4),#careplus-planos-precos .table-wrapper td:nth-child(4){width:160px;text-align:center}
+#careplus-planos-precos .table-wrapper td:last-child span{font-size:12px}
+#careplus-planos-precos .table-wrapper .valor-duplo div{width:82px}
+#careplus-planos-precos .table-wrapper .valor-duplo div span{font-size:11px}
+.sempre-novo-opcoes__card{padding:40px 30px}
+.sempre-novo-ofertas__slide,.cartao-ofertas__slide{padding:30px}
+.sempre-novo-ofertas__slide .sempre-novo-ofertas__imgbox,.cartao-ofertas__slide .cartao-ofertas__imgbox{height:290px}
+.sempre-novo-assinatura__text-column{padding-top:0}
+.sempre-novo-assinatura__text-column p{padding-top:2rem!important}
+.sempre-novo-beneficios__card{width:calc(45% - 16px);padding:40px 30px}
+.sempre-novo-planos__card{padding:40px 30px}
+.sempre-novo-planos__card .sempre-novo-planos__imgbox{height:260px}
+
+#site-header.menu1024px .fs-container-menu{justify-content:flex-end;padding:19px;height:60px}
+#site-header.menu1024px .fs-menu-button-container{display:flex}
+#site-header.menu1024px .fs-microsite-menu{width:100%;left:0;top:60px;align-items:center;flex-direction:column;justify-content:flex-start;position:absolute;display:none;background-color:#000}
+#site-header.menu1024px .fs-microsite-menu.menu-opened{height:200px;opacity:.9;transition:.3s,background .5s ease-in;transition-delay:.25s}
+#site-header.menu1024px .fs-microsite-menu .fs-menu-item{width:100%}
+#site-header.menu1024px .fs-microsite-menu .fs-menu-item.separator{display:none!important}
+#site-header.menu1024px .fs-microsite-menu .fs-menu-item a{width:100%;padding:12px 0;font-size:16px}
+#site-header.menu1024px .fs-microsite-menu .fs-menu-item a.active{color:#ffb546!important}
+#site-header.menu1024px .fs-microsite-menu .fs-menu-item a.active:after{display:none}
+#site-header.menu1024px .fs-microsite-menu .fs-menu-item:last-child{border-bottom:16px solid #000}
+#site-header.menu1024px #fs-menu-toggle:checked~.fs-microsite-menu{display:flex;height:auto}
+#site-header.menu1024px .fs-menu-item.button-right{position:initial;right:initial}
+
+.pay-seguranca__wrapper,
+.pay-seguranca-colunas__wrapper,
+.pay-transit__wrapper{padding-top:120px!important;padding-bottom:120px!important}
+.pay-pontos-rewards__wrapper{padding-top:120px!important;padding-bottom:240px!important}
+.pay-transit-funcionamento__wrapper{padding-top:90px!important;padding-bottom:90px!important}
+.pay-cadastre-cartao__section,.pay-quem-ja-esta__section,.pay-usando-lojas__section{padding:0 24px!important}
+.cartao-pague-aproximacao__section{padding-left:24px!important;padding-right:24px!important}
+.pay-cadastre-cartao__text-column,.cartao-pague-aproximacao__text-column{width:33%}
+.pay-cadastre-cartao__carousel-column,.cartao-pague-aproximacao__carousel-column{width:67%}
+.pay-cadastre-cartao__box-image,.cartao-pague-aproximacao__box-image{padding-left:90px;padding-right:24px}
+.pay-seguranca__section{background:url(https://c2.cdn1tp.net/fcacd8a24dae4687b17ffbf7b143ed3c/images/pay-persona-secured-by-knox.png) no-repeat bottom left 56vw #f4f4f4;background-size:52vw auto!important}
+.pay-seguranca__imagem-persona{display:none}
+.pay-transit__section{background-position:left center}
+.pay-transit__content:before{content:"";display:block;position:absolute;top:-24px;bottom:-24px;right:-24px;left:calc(65% - 24px);background-color:rgba(255,255,255,.75);border-radius:24px;z-index:-1}
+.pay-transit__text-column p img{max-width:200px}
+.pay-transit__text-column .pay-transit__icon-help{margin-top:-1px}
+#pay-usando-lojas .tab-content .pay-usando-lojas__box-image{right:-90px}
+.pay-usando-lojas__column-texts{padding-right:53%}
+
+.cartao-condicoes-exclusivas__card{padding:40px}
+.cartao-planos__section{padding-left:24px!important;padding-right:24px!important}
+.cartao-planos__column{width:calc(100% - 540px)}
+.cartao-planos__column.first,.cartao-planos__column.last{width:270px}
+.cartao-planos__column img{max-width:calc(100% - 300px);margin-left:-20%}
+.cartao-condicoes-exclusivas__section,.cartao-pague-aproximacao__section{padding-bottom:60px!important}
+.modal-qrcode__title,.modal-qrcode__text{padding-left:60px;padding-right:60px}
+
+.wallet-essenciais__three-columns{padding:40px 0}
+.wallet-essenciais__column{padding:36px 24px}
+
+.para-voce-como-funciona__bullet{flex-direction:column}
+.para-voce-como-funciona__bullet-image-column,
+.para-voce-como-funciona__bullet-text-column{width:100%}
+
+}
+
+@media (min-width:1025px){
+.fs-microsite-menu.rewards{padding-left:33px}
+.fs-microsite-menu.careplus{padding-left:5px}
+.fs-microsite-menu.pay{margin-left:-25px}
+.fs-microsite-menu.cartao{padding-left:144px}
+.fs-microsite-menu.para-voce{padding-left:81px}
+.fs-microsite-menu.sempre-novo{padding-left:68px}
+}
+
+@media (max-width:1024px){
+.top-header__section,
+section.menu-deactivator{height:calc(100vh - 60px - 56px)!important}
+}
+
+@media (orientation:portrait){
+.fs-container-menu{justify-content:flex-end;overflow:hidden;padding:19px;height:60px}
+.fs-menu-button-container{display:flex}
+.fs-microsite-menu{width:100%;left:0;top:60px;align-items:center;flex-direction:column;justify-content:flex-start;position:absolute;display:none;background-color:#000}
+.fs-microsite-menu.menu-opened{height:200px;opacity:.9;transition:.3s,background .5s ease-in;transition-delay:.25s}
+.fs-microsite-menu .fs-menu-item a{width:100%;padding:12px 0;font-size:16px}
+.fs-microsite-menu .fs-menu-item a.active{color:#ffb546!important}
+.fs-microsite-menu .fs-menu-item a.active:after{display:none}
+.fs-microsite-menu .fs-menu-item:last-child{border-bottom:16px solid #000}
+#fs-menu-toggle:checked~.fs-microsite-menu{display:flex;height:auto}
+
+#site-content section[class*=__section],.section.menu-deactivator{height:auto!important;display:block;padding:9vw 0 0 0}
+#site-content section[class*=__section].min-auto-height{padding-top:0!important}
+#site-content .rewards-ganhe-pontos__section,#site-content .rewards-como-participar__section{padding-top:0!important}
+#site-content section.image-background{padding-bottom:18vw}
+
+.samsung-para-voce__section:after{display:none!important}
+.samsung-care-plus__content{margin-top:0}
+.top-header__content,.samsung-rewards__content,.samsung-sempre-novo__content,.samsung-para-voce__content{float:none}
+.top-header__section,.samsung-rewards__section,.samsung-sempre-novo__section{background:#fff}
+.samsung-sempre-novo__content{padding-right:0}
+.samsung-pay__section{background:#f6f3f1}
+.cartao-samsung-itau__section{background:#0780f1}
+.samsung-care-plus__section{background:#04e0ff}
+.rewards-beneficios__section{background:#164ebb}
+img.full-width{margin:9vw -24px 0 -24px;width:100vw}
+
+#site-content section[class*=__section]{text-align:center}
+#site-content section[class*=__section].align-left{text-align:left}
+#site-content div[class*=__icon]{justify-content:center}
+#site-content div[class*=__icon].align-left{justify-content:flex-start}
+#site-content div[class*=__icon] img{max-width:11vw}
+#site-content div[class*=__icon] span{font-size:clamp(21px,1.55vw,3.15vh)}
+.top-header__section img.full-width{margin-top:0!important}
+.top-header__icon span{font-size:clamp(18px,2vw,2vh)!important}
+.top-header__title{font-size:clamp(36px,8vw,8vh)}
+.top-header__text{font-size:clamp(23px,3.2vw,3.2vh)}
+.samsung-pay__title,.samsung-rewards__title,.cartao-samsung-itau__title,.samsung-care-plus__title,.samsung-sempre-novo__title,.samsung-para-voce__title{font-size:clamp(28px,4.5vw,4.5vh)}
+#site-content a[class*=__button].font15px{font-size:15px!important;padding:0.5em 1em}
+
+.sempre-novo-videos__two-columns,
+.sempre-novo-introducao__two-columns,
+.sempre-novo-opcoes__three-cards,
+.sempre-novo-ofertas__two-columns,
+.sempre-novo-planos__three-cards,
+.pay-cadastre-cartao__two-columns,
+.cartao-pague-aproximacao__two-columns,
+.samsung-wallet__section.hub .samsung-wallet__two-columns{flex-direction:column}
+.samsung-wallet__section.hub .samsung-wallet__text-column{width:100%;padding:60px 0;text-align:center;align-items:center}
+.samsung-wallet__section.hub .samsung-wallet__image-column{width:100%;padding:0}
+.samsung-wallet__section.hub .samsung-wallet__floating-img{max-width:55vw}
+.sempre-novo-videos__column{width:100%;padding-left:24px;padding-right:24px}
+.sempre-novo-introducao__text-column,
+.pay-cadastre-cartao__text-column,.cartao-pague-aproximacao__text-column{width:100%;padding-right:0}
+.sempre-novo-introducao__image-column,
+.pay-cadastre-cartao__carousel-column,.cartao-pague-aproximacao__carousel-column{width:100%;padding-left:0;padding-top:60px}
+.sempre-novo-introducao__image-column img{max-width:400px!important}
+.sempre-novo-introducao__wrapper.padding-top{padding-top:0!important}
+.sempre-novo-opcoes__section,
+.sempre-novo-ofertas__section,
+.sempre-novo-assinatura__wrapper,
+.sempre-novo-beneficios__wrapper,
+.cartao-ofertas__section,
+.cartao-videos__section,
+.cartao-condicoes-exclusivas__section,
+.cartao-pague-aproximacao__section,
+.cartao-planos__section{padding-top:0!important}
+.sempre-novo-opcoes__three-cards,
+.sempre-novo-planos__three-cards{align-items:center}
+.sempre-novo-opcoes__card,
+.sempre-novo-planos__card{width:100%;max-width:400px;margin-right:0;margin-bottom:30px}
+.sempre-novo-ofertas__wrapper,.cartao-ofertas__wrapper{margin-top:0!important;padding-bottom:90px!important}
+.sempre-novo-ofertas__video{display:none}
+.sempre-novo-ofertas__carousel{width:100%}
+.sempre-novo-ofertas__slide .sempre-novo-ofertas__imgbox,.cartao-ofertas__slide .cartao-ofertas__imgbox{height:390px}
+.sempre-novo-assinatura__two-columns{flex-direction:column-reverse}
+.sempre-novo-assinatura__image-column{width:100%;padding-right:0;padding-top:60px}
+.sempre-novo-assinatura__image-column img{max-width:560px!important}
+.sempre-novo-assinatura__text-column{width:100%}
+.sempre-novo-beneficios__section,
+.sempre-novo-planos__section{padding-top:0!important;margin-top:0!important}
+.sempre-novo-planos__wrapper{margin-top:0!important}
+.sempre-novo-planos__card .sempre-novo-planos__imgbox{height:360px}
+
+#site-content .pay-wallet__section,#site-content .samsung-wallet__section{text-align:initial!important;padding-top:0!important}
+.pay-cadastre-cartao__image,.cartao-pague-aproximacao__image{text-align:initial!important}
+.pay-cadastre-cartao__carousel-column,.cartao-pague-aproximacao__carousel-column{padding-top:30px}
+.pay-cadastre-cartao__text-column .pay-cadastre-cartao__text,.cartao-pague-aproximacao__text-column .cartao-pague-aproximacao__text{padding:0.5rem 0!important}
+.pay-quem-ja-esta__grid-logo{width:33.333%}
+#site-content .pay-seguranca__section,
+#site-content .pay-seguranca-colunas__section,
+#site-content .pay-pontos-rewards__section,
+#site-content .pay-transit-funcionamento__section{padding-top:0!important}
+.pay-seguranca__wrapper{padding-top:90px!important;padding-bottom:300px!important}
+.pay-seguranca-colunas__wrapper,
+.pay-transit__wrapper{padding-top:90px!important;padding-bottom:90px!important}
+.pay-pontos-rewards__wrapper{padding-top:90px!important;padding-bottom:0!important}
+.pay-transit-funcionamento__wrapper{padding-top:60px!important;padding-bottom:60px!important}
+.pay-pontos-rewards__section{background:#1d51bb}
+.pay-pontos-rewards__wrapper img{margin-top:0}
+.pay-transit__content{padding-left:45%;padding-right:36px}
+.pay-transit__content:before{right:24px;left:calc(45% - 24px)}
+.pay-transit__text-column{padding-right:0!important}
+.pay-transit__text-column h3{padding:0.5rem 0 1.5rem 0!important}
+.pay-transit__text-column p{padding-top:1rem!important}
+
+.pay-usando-lojas__columns{flex-direction:column}
+.pay-usando-lojas__column-texts,.pay-usando-lojas__column-image{width:100%!important;padding-right:0!important;height:initial!important}
+.pay-usando-lojas__box-image{position:initial!important;top:initial!important;right:initial!important}
+#pay-usando-lojas .tab-content{height:initial}
+#pay-usando-lojas .tab-content .pay-usando-lojas__box-image img{border-radius:24px;margin:48px 0 24px 0;width:calc(100% - 48px)}
+#pay-usando-lojas .tab-content .pay-usando-lojas__box-image:after{display:none}
+.pay-usando-lojas__column-image{padding:48px 0 24px 0}
+.pay-usando-lojas__column-texts .pay-usando-lojas__text{padding-top:.5rem!important}
+.pay-usando-lojas__carousel{margin-bottom:50px}
+#pay-usando-lojas .flickity-page-dots{bottom:-55px;width:100%}
+#pay-usando-lojas .flickity-prev-next-button{bottom:-59px;width:25px;height:30px;z-index:9!important}
+#pay-usando-lojas .flickity-prev-next-button.previous{left:calc(50% - 55px)}
+#pay-usando-lojas .flickity-prev-next-button.next{right:calc(50% - 55px)}
+
+.cartao-condicoes-exclusivas__card{width:calc(50% - 16px);padding:40px 28px;height:290px}
+.cartao-ofertas__section{padding-bottom:30px!important}
+.cartao-ofertas__slide{width:calc(50% - 16px);padding-top:15px}
+.cartao-lojas__section{padding-bottom:0!important;padding-top:0!important}
+.cartao-lojas__wrapper{padding-bottom:0!important}
+.cartao-lojas__section:before{display:none}
+.cartao-planos__column.first, .cartao-planos__column.last{text-align:left}
+.cartao-planos__column img{margin-left:-40%;bottom:-150px}
+.modal-qrcode__close{top:150px;right:60px}
+
+.samsung-wallet__icon{justify-content:flex-start!important}
+.samsung-wallet__floating-img,.wallet-bolso__floating-img{z-index:2!important}
+.wallet-bolso__section{padding-top:3vw!important;padding-bottom:3vw!important}
+.wallet-bolso__wrapper{padding-top:11vw!important;padding-bottom:11vw!important}
+.wallet-bolso__content{text-align:initial}
+.wallet-bolso__content:before{top:-9vw;bottom:-9vw}
+.wallet-essenciais__section{padding-top:20px!important}
+
+.para-voce-como-funciona__wrapper{padding-bottom:0!important;border-bottom:1px solid #eee}
+.para-voce-como-funciona__text-column{width:100%}
+.para-voce-como-funciona__image-column,
+#para-voce-como-funciona .flickity-prev-next-button{display:none!important}
+.para-voce-como-funciona__mobile{display:block}
+.para-voce-disclaimer__content{text-align:left!important}
+}
+
+@media (min-width:768px){
+#careplus-planos-precos .tabs-container nav{background:transparent}
+#careplus-planos-precos .tabs-container nav ul{display:flex;flex-direction:row;justify-content:center;white-space:nowrap;overflow:hidden;border:none;padding:0}
+#careplus-planos-precos .tabs-container nav ul li{display:inline-block;margin:0;padding:24px 0 16px 0;border:2px solid #fff;border-bottom:0;width:20%;text-align:center;background-color:#fafafa;border-top-left-radius:16px;border-top-right-radius:16px}
+#careplus-planos-precos .tabs-container nav ul li:first-child{border-left:0}
+#careplus-planos-precos .tabs-container nav ul li:last-child{border-right:0}
+#careplus-planos-precos .tabs-container nav ul li.active{order:1;background-color:#eee}
+#careplus-planos-precos .tabs-container nav ul li:not(.active){position:relative;top:auto}
+
+#pay-usando-lojas .tabs-container nav{background:transparent}
+#pay-usando-lojas .tabs-container nav ul{display:flex;flex-direction:row;white-space:nowrap;overflow:hidden;border:none;padding:0}
+#pay-usando-lojas .tabs-container nav ul li{display:inline-block;margin:0;padding:24px 0 16px 0;border:2px solid #f4f4f4;border-bottom:0;width:25%;text-align:center;background-color:#f4f4f4;border-top-left-radius:16px;border-top-right-radius:16px}
+#pay-usando-lojas .tabs-container nav ul li:first-child{border-left:0}
+#pay-usando-lojas .tabs-container nav ul li:last-child{border-right:0}
+#pay-usando-lojas .tabs-container nav ul li.active{order:1;background-color:#fff}
+#pay-usando-lojas .tabs-container nav ul li:not(.active){position:relative;top:auto}
+}
+
+@media (max-width:768px){
+#site-content section[class*=__section].min-auto-height{min-height:auto}
+#site-content div[class*=__wrapper].padding-top-bottom{padding-top:60px;padding-bottom:60px}
+#careplus-planos-precos .tabs-container nav ul li{padding:12px 0;font-size:18px!important}
+
+#pay-usando-lojas .tabs-container nav ul li{padding:12px 0;font-size:18px!important}
+}
+
+@media (max-width:767px){
+#site-content section[class*=__section]{padding-top:18vw}
+#site-content div[class*=__wrapper].padding-top-bottom{padding-top:60px;padding-bottom:40px}
+#site-content div[class*=__icon] img{width:90px;max-width:initial}
+img.full-width{margin-top:18vw}
+.top-header__icons{flex-wrap:wrap;justify-content:center}
+.top-header__icon:nth-child(3),.top-header__icon:nth-child(6){padding-right:0}
+#samsung-para-voce img.full-width{padding-top:9vw;margin:0 0 0 40vw;width:40vw}
+
+.rewards-ganhe-pontos__two-columns,.rewards-como-participar__three-cards{flex-direction:column}
+.rewards-ganhe-pontos__column,.rewards-como-participar__card{width:100%;margin-right:0}
+.rewards-como-participar__card{padding:30px 20px;margin-bottom:24px}
+.rewards-como-participar__card:last-child{margin-bottom:0}
+.rewards-como-participar__card .icon{max-width:80px}
+
+#careplus-planos-precos .tab-content{padding:18px 12px}
+#careplus-planos-precos .tabs-container nav{border-top-left-radius:16px;border-top-right-radius:16px}
+#careplus-planos-precos .tabs-container nav ul li{font-size:24px!important;position:relative}
+#careplus-planos-precos .tabs-container nav ul li.active:before{content:"";position:absolute;right:20px;top:50%;transform:translateY(-50%) rotate(45deg);border:5px solid;border-top-color:rgba(0,0,0,0);border-left-color:rgba(0,0,0,0);margin-top:-2.5px;background-color:rgba(0,0,0,0);pointer-events:none}
+#careplus-planos-precos .tabs-container nav ul.expanded li.active:before{transform:rotate(-135deg)}
+#careplus-planos-precos .dropdown-toggle{padding:9px 60px!important}
+#careplus-planos-precos .dropdown-toggle:before{right:12px}
+#careplus-planos-precos .table-wrapper .scrollable table{margin-left:145px;width:calc(100% - 145px)}
+#careplus-planos-precos .table-wrapper .pinned{width:145px}
+#careplus-planos-precos .table-wrapper .pinned td span{font-size:11px!important;display:block}
+.careplus-seguros-coberturas__section:before{right:0;border-top-right-radius:0;border-bottom-right-radius:0}
+.careplus-seguros-coberturas__icon{margin-top:10px}
+.careplus-seguros-coberturas__slide p{padding-bottom:0!important}
+.careplus-como-contratar__three-columns,.wallet-essenciais__three-columns{flex-direction:column;padding-top:0}
+.careplus-como-contratar__column,.wallet-essenciais__column{width:100%;margin-right:0;margin-bottom:60px!important}
+.careplus-como-contratar__column:last-child{margin-bottom:0!important}
+
+.sempre-novo-ofertas__slide,.cartao-ofertas__slide{width:100%}
+.sempre-novo-beneficios__three-cards{flex-direction:column}
+.sempre-novo-beneficios__card{width:100%;margin-right:0;margin-bottom:30px}
+
+#pay-usando-lojas .tab-content{padding:18px 12px}
+#pay-usando-lojas .tabs-container nav{border-top-left-radius:16px;border-top-right-radius:16px}
+#pay-usando-lojas .tabs-container nav ul li{font-size:24px!important;position:relative}
+#pay-usando-lojas .tabs-container nav ul li.active:before{content:"";position:absolute;right:20px;top:50%;transform:translateY(-50%) rotate(45deg);border:5px solid;border-top-color:rgba(0,0,0,0);border-left-color:rgba(0,0,0,0);margin-top:-2.5px;background-color:rgba(0,0,0,0);pointer-events:none}
+#pay-usando-lojas .tabs-container nav ul.expanded li.active:before{transform:rotate(-135deg)}
+#pay-usando-lojas .dropdown-toggle{padding:9px 60px!important}
+#pay-usando-lojas .dropdown-toggle:before{right:12px}
+#pay-usando-lojas .table-wrapper .scrollable table{margin-left:145px;width:calc(100% - 145px)}
+#pay-usando-lojas .table-wrapper .pinned{width:145px}
+#pay-usando-lojas .table-wrapper .pinned td span{font-size:11px!important;display:block}
+
+.pay-wallet__two-columns,.samsung-wallet__two-columns{flex-direction:column}
+.pay-wallet__image-column,.samsung-wallet__image-column{width:100%}
+.pay-wallet__text-column,.samsung-wallet__text-column{width:100%;padding:36px 0 0 0;text-align:center;align-items:center}
+.pay-cadastre-cartao__section,.cartao-pague-aproximacao__section{padding-bottom:40px!important}
+.pay-cadastre-cartao__image,.cartao-pague-aproximacao__image{flex-direction:column;align-items:center}
+.pay-cadastre-cartao__box-image,.cartao-pague-aproximacao__box-image{background-color:transparent;height:initial;padding:24px 0 0 0;margin-left:0;text-align:center}
+.pay-cadastre-cartao__box-image .pay-cadastre-cartao__text,.cartao-pague-aproximacao__box-image .cartao-pague-aproximacao__text{padding-top:.5rem!important}
+.pay-quem-ja-esta__grid-logos{margin-left:-36px;margin-right:-36px}
+.pay-quem-ja-esta__grid-logo{width:50%;padding:0 10px 30px 10px}
+.pay-seguranca__section{background-size:320px auto!important;background-position:bottom right}
+.pay-seguranca-colunas__two-cards{flex-direction:column}
+.pay-seguranca-colunas__card{width:100%;margin:0}
+.pay-seguranca-colunas__card:last-child{margin-top:24px}
+.pay-seguranca__wrapper{padding-top:60px!important}
+.pay-seguranca-colunas__wrapper,
+.pay-transit__wrapper{padding-top:60px!important;padding-bottom:60px!important}
+.pay-pontos-rewards__wrapper{padding-top:60px!important;padding-bottom:0!important}
+.pay-transit__section{padding-top:0!important}
+.pay-transit__content{padding-left:24px;padding-right:24px}
+.pay-transit__content:before{right:12px;left:12px}
+.pay-transit__two-columns{flex-direction:column}
+.pay-transit__text-column{width:100%;text-align:center;padding-right:0;padding-bottom:36px}
+.pay-transit__image-column{width:100%;padding-left:0}
+
+.pay-usando-lojas__section{padding:0!important}
+#pay-usando-lojas .tab-content{border-radius:0}
+#pay-usando-lojas .tab-content .pay-usando-lojas__box-image img{margin-bottom:0;width:calc(100% - 12px)}
+
+.cartao-planos__section,.cartao-planos__wrapper{padding-bottom:0!important}
+.cartao-planos__three-columns{flex-direction:column}
+.cartao-planos__column{width:100%;order:3;padding-top:30px}
+.cartao-planos__column.first{order:1;padding-top:20px}
+.cartao-planos__column.last{order:2}
+.cartao-planos__column img{max-width:100%;margin-left:0;position:relative;bottom:initial}
+
+.cartao-videos__wrapper{padding-top:40px!important}
+.cartao-videos__three-columns{flex-direction:column}
+.cartao-videos__column{width:100%;margin-bottom:24px}
+.cartao-videos__column:last-child{margin-bottom:0}
+.cartao-condicoes-exclusivas__card{width:100%}
+.modal-qrcode__title{font-size:21px!important;padding:60px 40px 0 40px}
+.modal-qrcode__text{font-size:16px!important;padding-left:40px;padding-right:40px}
+.modal-qrcode__close{top:85px;right:30px}
+
+.samsung-wallet__image-column{padding-top:40px}
+.samsung-wallet__floating-img{max-width:56vw}
+.wallet-bolso__content{padding-left:24px}
+.wallet-bolso__floating-img{position:relative;margin:-20px 0 0 -48px;max-width:100%}
+.wallet-essenciais__section{padding-top:40px!important}
+.wallet-essenciais__column{margin-bottom:24px}
+
+.wallet-bolso__bullet-image-column{width:69px}
+.wallet-bolso__bullet-image-column img{width:54px;height:auto;margin-top:10px}
+.wallet-bolso__bullet-text-column{width:calc(100% - 69px)}
+}

