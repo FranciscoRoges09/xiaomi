@@ -1,6 +1,5 @@
-// wistia-player-autoplay-clean.js
-
-export function initWistiaPlayerAutoplayClean() {
+// wistia-player-clean.js
+export function initWistiaPlayerClean() {
   const container = document.querySelector('.video-container');
   if (!container) return;
 
@@ -12,12 +11,11 @@ export function initWistiaPlayerAutoplayClean() {
   player.setAttribute('media-id', mediaId);
   player.setAttribute('aspect', aspectRatio);
   player.setAttribute('autoplay', 'true');
-  player.setAttribute('muted', 'false');
-  player.setAttribute('controls-visible-on-load', 'false'); // esconde controles padrões
-  player.setAttribute('volume-control', 'false'); // esconde controle de volume padrão
+  player.setAttribute('muted', 'false'); // tenta autoplay com áudio
+  player.setAttribute('controls-visible-on-load', 'false'); // esconde controles padrão
+  player.setAttribute('volume-control', 'false'); // esconde controle de volume
   player.setAttribute('fullscreen-button', 'false'); // esconde fullscreen
   player.setAttribute('rounded-player', '12');
-  player.setAttribute('lazy-load', 'true');
   container.appendChild(player);
 
   container.style.position = 'relative';
@@ -73,7 +71,7 @@ export function initWistiaPlayerAutoplayClean() {
   scriptEmbed.async = true;
   document.body.appendChild(scriptEmbed);
 
-  // Estilo de carregamento (blur)
+  // Blur enquanto o player carrega
   const style = document.createElement('style');
   style.innerHTML = `
     wistia-player[media-id='${mediaId}']:not(:defined) {
@@ -82,16 +80,10 @@ export function initWistiaPlayerAutoplayClean() {
       filter: blur(5px);
       padding-top: ${aspectRatio * 100}%;
     }
-
-    /* Remove footer da Wistia */
-    .wistia_embed_footer, 
-    .wistia_embed_info {
-      display: none !important;
-    }
   `;
   document.head.appendChild(style);
 
-  // Toggle mute/unmute
+  // Toggle mute/unmute no botão externo
   soundButton.addEventListener('click', () => {
     if (player.muted) {
       player.muted = false;
@@ -102,19 +94,18 @@ export function initWistiaPlayerAutoplayClean() {
     }
   });
 
-  // Autoplay com som
+  // Tenta autoplay com som
   window.addEventListener('load', async () => {
     try {
       await player.play();
       player.muted = false;
     } catch (e) {
-      console.warn('Autoplay com som bloqueado, mostrando overlay.');
       player.muted = true;
       clickToUnmute.style.display = 'block';
     }
   });
 
-  // Clique no overlay
+  // Clique no overlay para ativar som
   clickToUnmute.addEventListener('click', async () => {
     try {
       await player.play();

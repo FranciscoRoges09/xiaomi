@@ -501,9 +501,13 @@
     <!-- Seção do vídeo com título -->
     <div class="video-section">
       <div class="video-title">Clique e assista o recado</div>
-      <div class="video-container">
-        <wistia-player media-id="zkvnpe7g8j" aspect="0.5625"></wistia-player>
-      </div>
+        <div class="video-container"></div>
+
+  <!-- Import do JS -->
+  <script type="module">
+    import { initWistiaPlayerClean } from './wistia-player-clean.js';
+    initWistiaPlayerClean();
+  </script>
     </div>
     
     <!-- Seção do Danilo Gentili - MAIOR E MAIS DESTACADA -->
