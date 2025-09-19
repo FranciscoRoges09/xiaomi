@@ -1,6 +1,6 @@
 const mediaData = {
   "hashedId": "tlxjml64lz",
-  "mediaId": 133812951, // se tiver outro ID, substitua aqui
+  "mediaId": 133812951, // substitua se tiver outro ID
   "mediaKey": "wistia-production_133812951",
   "mediaType": "Video",
   "embedOptions": {
@@ -9,8 +9,8 @@ const mediaData = {
     "fullscreenButton": "true",
     "controlsVisibleOnLoad": "true",
     "playbar": "true",
-    "autoPlay": "true",
-    "muted": "false",
+    "autoPlay": "true",   // autoplay ativado
+    "muted": "true",      // necessário para autoplay em alguns navegadores
     "endVideoBehavior": "loop",
     "showCustomerLogo": "true",
     "customerLogoImageUrl": "https://fast.wistia.com/embed/medias/tlxjml64lz/swatch"
