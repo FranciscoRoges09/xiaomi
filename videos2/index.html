@@ -665,19 +665,25 @@
       <p class="subtitulo">Você foi um dos escolhidos da nossa melhor promoção exclusiva de lançamento do nosso novo Poco X7 Pro. Caso não tenha interesse no aparelho, fique tranquilo, haverá outros produtos disponíveis. Clique e Assista ao vídeo especial abaixo, feito com muito carinho, para descobrir como resgatar seu prêmio especial.</p>
     </div>
     
-   <script src="https://fast.wistia.com/player.js" async></script>
-<script src="js/qzkz2ykaem.js" async type="module"></script>
+   <!-- Player Wistia -->
+<script src="https://fast.wistia.com/player.js" async></script>
 
-<style>
-  wistia-player[media-id='qzkz2ykaem']:not(:defined) {
-    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/qzkz2ykaem/swatch');
-    display: block;
-    filter: blur(5px);
-    padding-top: 177.78%;
-  }
-</style>
+<div class="video-container">
+  <wistia-player media-id="qzkz2ykaem" aspect="0.5625"></wistia-player>
+</div>
 
-<wistia-player media-id="qzkz2ykaem" aspect="0.5625" autoPlay muted="false" volume="1"></wistia-player>
+<script type="module">
+  import { mediaData } from './js/qzkz2ykaem.js';
+
+  window._wq = window._wq || [];
+  _wq.push({ 
+    id: mediaData.hashedId, 
+    onReady: function(video) { 
+      video.play(); // força autoplay
+      video.unmute(); // força som ativado
+    } 
+  });
+</script>
 
       <div class="btn-container">
         <a href="#" id="btn-resgatar" class="btn-resgatar">
