@@ -501,13 +501,38 @@
     <!-- Seção do vídeo com título -->
     <div class="video-section">
       <div class="video-title">Clique e assista o recado</div>
-        <div class="video-container"></div>
+      <div class="video-container">
+  <wistia-player 
+    media-id="zkvnpe7g8j" 
+    aspect="0.5625" 
+    autoplay="true" 
+    muted="false" 
+    controls-visible-on-load="false" 
+    volume-control="false" 
+    fullscreen-button="false" 
+    rounded-player="12">
+  </wistia-player>
+</div>
 
-  <!-- Import do JS -->
-  <script type="module">
-    import { initWistiaPlayerClean } from './wistia-player-clean.js';
-    initWistiaPlayerClean();
-  </script>
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/zkvnpe7g8j.js" async type="module"></script>
+
+<style>
+  /* Fallback enquanto o player carrega */
+  wistia-player[media-id='zkvnpe7g8j']:not(:defined) {
+    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/zkvnpe7g8j/swatch');
+    display: block;
+    filter: blur(5px);
+    padding-top: 56.25%; /* proporção 16:9, ajuste se necessário */
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+  }
+</style>
     </div>
     
     <!-- Seção do Danilo Gentili - MAIOR E MAIS DESTACADA -->
