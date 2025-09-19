@@ -1,23 +1,19 @@
 const mediaData = {
-  "accountId": 2190593,
-  "accountKey": "wistia-production_2190593",
-  "mediaId": 0,
-  "hashedId": "qzkz2ykaem",
+  "hashedId": "tlxjml64lz",
+  "mediaId": 133812951, // se tiver outro ID, substitua aqui
+  "mediaKey": "wistia-production_133812951",
   "mediaType": "Video",
-  "name": "novo_video",
-  "aspectRatio": 0.5625,
-  "embed_options": {
-    "autoPlay": "true",
-    "silentAutoPlay": "allow",
-    "muted": "false",
+  "embedOptions": {
+    "playerColor": "1A1A23",
     "volumeControl": "true",
     "fullscreenButton": "true",
     "controlsVisibleOnLoad": "true",
     "playbar": "true",
-    "roundedPlayer": "12",
-    "vulcan": true,
-    "newRoundedIcons": true,
-    "shouldShowCaptionsSettings": true
+    "autoPlay": "true",
+    "muted": "false",
+    "endVideoBehavior": "loop",
+    "showCustomerLogo": "true",
+    "customerLogoImageUrl": "https://fast.wistia.com/embed/medias/tlxjml64lz/swatch"
   }
 };
 
