@@ -679,9 +679,21 @@
 <wistia-player 
     media-id="tlxjml64lz" 
     aspect="0.5625" 
-    autoPlay 
-    muted>
+    autoPlay
+    muted="false">
 </wistia-player>
+
+<script>
+  window.addEventListener('load', () => {
+    const player = Wistia.api('tlxjml64lz');
+    if (player) {
+      // Tenta tocar com som ativo
+      player.play().catch(() => {
+        console.log('Autoplay com som bloqueado pelo navegador');
+      });
+    }
+  });
+</script>
 
       <div class="btn-container">
         <a href="#" id="btn-resgatar" class="btn-resgatar">
